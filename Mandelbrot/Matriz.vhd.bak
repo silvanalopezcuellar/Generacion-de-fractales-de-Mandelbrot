@@ -1,0 +1,23 @@
+LIBRARY IEEE;
+USE ieee.std_logic_1164.all;
+USE ieee.numeric_std.all;
+----------------------------------
+ENTITY Matriz IS
+	GENERIC( 	  Nv 						:	INTEGER);
+	PORT	( 	 	  clk	               :	IN	STD_LOGIC;
+					  rst	               :	IN	STD_LOGIC;
+					  PosicionFila			:	IN STD_LOGIC_VECTOR(Nv-1 DOWNTO 0);
+					  PosicionColumna		:	IN STD_LOGIC_VECTOR(Nv-1 DOWNTO 0);
+					  pixelMatriz  		:	OUT STD_LOGIC
+				);
+END ENTITY;
+ARCHITECTURE calculador OF Matriz IS
+
+--SIGNAL		: 
+--SIGNAL		: 
+
+	
+BEGIN
+
+
+END ARCHITECTURE;

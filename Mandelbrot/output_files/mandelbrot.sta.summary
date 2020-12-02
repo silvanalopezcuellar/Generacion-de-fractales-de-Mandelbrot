@@ -1,0 +1,305 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -15.670
+TNS   : -6336.808
+
+Type  : Slow 1200mV 85C Model Setup 'horizontal:horizontalBLK|controlhorizontal:DUT|pr_state.dos'
+Slack : -6.720
+TNS   : -16.902
+
+Type  : Slow 1200mV 85C Model Setup 'controlDibujo:controlDibujoBLK|proof:Matriz|controlFractal:ControlFractalM|pr_state.columnas'
+Slack : -5.612
+TNS   : -124.727
+
+Type  : Slow 1200mV 85C Model Setup 'horizontal:horizontalBLK|cont:BIST4|temp[0]'
+Slack : -4.857
+TNS   : -654.819
+
+Type  : Slow 1200mV 85C Model Setup 'controlDibujo:controlDibujoBLK|proof:Matriz|controlFractal:ControlFractalM|pr_state.filas'
+Slack : -4.602
+TNS   : -125.587
+
+Type  : Slow 1200mV 85C Model Setup 'controlDibujo:controlDibujoBLK|proof:Matriz|controlFractal:ControlFractalM|pr_state.finalizacion'
+Slack : -1.965
+TNS   : -10.497
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : -1.061
+TNS   : -8.860
+
+Type  : Slow 1200mV 85C Model Hold 'controlDibujo:controlDibujoBLK|proof:Matriz|controlFractal:ControlFractalM|pr_state.filas'
+Slack : -0.455
+TNS   : -1.529
+
+Type  : Slow 1200mV 85C Model Hold 'controlDibujo:controlDibujoBLK|proof:Matriz|controlFractal:ControlFractalM|pr_state.columnas'
+Slack : -0.267
+TNS   : -0.425
+
+Type  : Slow 1200mV 85C Model Hold 'horizontal:horizontalBLK|cont:BIST4|temp[0]'
+Slack : 0.139
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'controlDibujo:controlDibujoBLK|proof:Matriz|controlFractal:ControlFractalM|pr_state.finalizacion'
+Slack : 0.644
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'horizontal:horizontalBLK|controlhorizontal:DUT|pr_state.dos'
+Slack : 0.664
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'controlDibujo:controlDibujoBLK|proof:Matriz|controlFractal:ControlFractalM|pr_state.columnas'
+Slack : -3.338
+TNS   : -69.240
+
+Type  : Slow 1200mV 85C Model Recovery 'clk'
+Slack : -3.195
+TNS   : -196.427
+
+Type  : Slow 1200mV 85C Model Recovery 'controlDibujo:controlDibujoBLK|proof:Matriz|controlFractal:ControlFractalM|pr_state.filas'
+Slack : -2.027
+TNS   : -52.344
+
+Type  : Slow 1200mV 85C Model Removal 'controlDibujo:controlDibujoBLK|proof:Matriz|controlFractal:ControlFractalM|pr_state.filas'
+Slack : -1.941
+TNS   : -55.770
+
+Type  : Slow 1200mV 85C Model Removal 'controlDibujo:controlDibujoBLK|proof:Matriz|controlFractal:ControlFractalM|pr_state.columnas'
+Slack : -1.931
+TNS   : -52.599
+
+Type  : Slow 1200mV 85C Model Removal 'clk'
+Slack : 0.601
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -1594.546
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'iniciofractal'
+Slack : -3.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'horizontal:horizontalBLK|cont:BIST4|temp[0]'
+Slack : -1.000
+TNS   : -164.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'controlDibujo:controlDibujoBLK|proof:Matriz|controlFractal:ControlFractalM|pr_state.columnas'
+Slack : 0.381
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'horizontal:horizontalBLK|controlhorizontal:DUT|pr_state.dos'
+Slack : 0.384
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'controlDibujo:controlDibujoBLK|proof:Matriz|controlFractal:ControlFractalM|pr_state.finalizacion'
+Slack : 0.415
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'controlDibujo:controlDibujoBLK|proof:Matriz|controlFractal:ControlFractalM|pr_state.filas'
+Slack : 0.417
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -13.869
+TNS   : -5529.763
+
+Type  : Slow 1200mV 0C Model Setup 'horizontal:horizontalBLK|controlhorizontal:DUT|pr_state.dos'
+Slack : -6.056
+TNS   : -15.337
+
+Type  : Slow 1200mV 0C Model Setup 'controlDibujo:controlDibujoBLK|proof:Matriz|controlFractal:ControlFractalM|pr_state.columnas'
+Slack : -5.091
+TNS   : -113.222
+
+Type  : Slow 1200mV 0C Model Setup 'horizontal:horizontalBLK|cont:BIST4|temp[0]'
+Slack : -4.197
+TNS   : -566.694
+
+Type  : Slow 1200mV 0C Model Setup 'controlDibujo:controlDibujoBLK|proof:Matriz|controlFractal:ControlFractalM|pr_state.filas'
+Slack : -4.172
+TNS   : -113.063
+
+Type  : Slow 1200mV 0C Model Setup 'controlDibujo:controlDibujoBLK|proof:Matriz|controlFractal:ControlFractalM|pr_state.finalizacion'
+Slack : -1.772
+TNS   : -9.562
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : -0.999
+TNS   : -8.354
+
+Type  : Slow 1200mV 0C Model Hold 'controlDibujo:controlDibujoBLK|proof:Matriz|controlFractal:ControlFractalM|pr_state.filas'
+Slack : -0.383
+TNS   : -1.174
+
+Type  : Slow 1200mV 0C Model Hold 'controlDibujo:controlDibujoBLK|proof:Matriz|controlFractal:ControlFractalM|pr_state.columnas'
+Slack : -0.250
+TNS   : -0.373
+
+Type  : Slow 1200mV 0C Model Hold 'horizontal:horizontalBLK|cont:BIST4|temp[0]'
+Slack : 0.166
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'controlDibujo:controlDibujoBLK|proof:Matriz|controlFractal:ControlFractalM|pr_state.finalizacion'
+Slack : 0.724
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'horizontal:horizontalBLK|controlhorizontal:DUT|pr_state.dos'
+Slack : 0.742
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'controlDibujo:controlDibujoBLK|proof:Matriz|controlFractal:ControlFractalM|pr_state.columnas'
+Slack : -3.084
+TNS   : -64.049
+
+Type  : Slow 1200mV 0C Model Recovery 'clk'
+Slack : -2.774
+TNS   : -169.858
+
+Type  : Slow 1200mV 0C Model Recovery 'controlDibujo:controlDibujoBLK|proof:Matriz|controlFractal:ControlFractalM|pr_state.filas'
+Slack : -1.849
+TNS   : -48.189
+
+Type  : Slow 1200mV 0C Model Removal 'controlDibujo:controlDibujoBLK|proof:Matriz|controlFractal:ControlFractalM|pr_state.filas'
+Slack : -1.724
+TNS   : -49.463
+
+Type  : Slow 1200mV 0C Model Removal 'controlDibujo:controlDibujoBLK|proof:Matriz|controlFractal:ControlFractalM|pr_state.columnas'
+Slack : -1.700
+TNS   : -46.205
+
+Type  : Slow 1200mV 0C Model Removal 'clk'
+Slack : 0.481
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -1594.392
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'iniciofractal'
+Slack : -3.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'horizontal:horizontalBLK|cont:BIST4|temp[0]'
+Slack : -1.000
+TNS   : -164.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'horizontal:horizontalBLK|controlhorizontal:DUT|pr_state.dos'
+Slack : 0.417
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'controlDibujo:controlDibujoBLK|proof:Matriz|controlFractal:ControlFractalM|pr_state.columnas'
+Slack : 0.436
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'controlDibujo:controlDibujoBLK|proof:Matriz|controlFractal:ControlFractalM|pr_state.finalizacion'
+Slack : 0.436
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'controlDibujo:controlDibujoBLK|proof:Matriz|controlFractal:ControlFractalM|pr_state.filas'
+Slack : 0.454
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -8.671
+TNS   : -3118.769
+
+Type  : Fast 1200mV 0C Model Setup 'horizontal:horizontalBLK|controlhorizontal:DUT|pr_state.dos'
+Slack : -3.404
+TNS   : -8.521
+
+Type  : Fast 1200mV 0C Model Setup 'controlDibujo:controlDibujoBLK|proof:Matriz|controlFractal:ControlFractalM|pr_state.columnas'
+Slack : -3.019
+TNS   : -63.142
+
+Type  : Fast 1200mV 0C Model Setup 'controlDibujo:controlDibujoBLK|proof:Matriz|controlFractal:ControlFractalM|pr_state.filas'
+Slack : -2.362
+TNS   : -62.614
+
+Type  : Fast 1200mV 0C Model Setup 'horizontal:horizontalBLK|cont:BIST4|temp[0]'
+Slack : -2.360
+TNS   : -299.713
+
+Type  : Fast 1200mV 0C Model Setup 'controlDibujo:controlDibujoBLK|proof:Matriz|controlFractal:ControlFractalM|pr_state.finalizacion'
+Slack : -0.843
+TNS   : -4.382
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : -0.693
+TNS   : -5.829
+
+Type  : Fast 1200mV 0C Model Hold 'controlDibujo:controlDibujoBLK|proof:Matriz|controlFractal:ControlFractalM|pr_state.filas'
+Slack : -0.390
+TNS   : -2.000
+
+Type  : Fast 1200mV 0C Model Hold 'controlDibujo:controlDibujoBLK|proof:Matriz|controlFractal:ControlFractalM|pr_state.columnas'
+Slack : -0.259
+TNS   : -0.999
+
+Type  : Fast 1200mV 0C Model Hold 'horizontal:horizontalBLK|cont:BIST4|temp[0]'
+Slack : 0.043
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'controlDibujo:controlDibujoBLK|proof:Matriz|controlFractal:ControlFractalM|pr_state.finalizacion'
+Slack : 0.496
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'horizontal:horizontalBLK|controlhorizontal:DUT|pr_state.dos'
+Slack : 0.561
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'controlDibujo:controlDibujoBLK|proof:Matriz|controlFractal:ControlFractalM|pr_state.columnas'
+Slack : -1.698
+TNS   : -30.422
+
+Type  : Fast 1200mV 0C Model Recovery 'clk'
+Slack : -1.439
+TNS   : -87.235
+
+Type  : Fast 1200mV 0C Model Recovery 'controlDibujo:controlDibujoBLK|proof:Matriz|controlFractal:ControlFractalM|pr_state.filas'
+Slack : -0.890
+TNS   : -20.643
+
+Type  : Fast 1200mV 0C Model Removal 'controlDibujo:controlDibujoBLK|proof:Matriz|controlFractal:ControlFractalM|pr_state.columnas'
+Slack : -1.195
+TNS   : -32.294
+
+Type  : Fast 1200mV 0C Model Removal 'controlDibujo:controlDibujoBLK|proof:Matriz|controlFractal:ControlFractalM|pr_state.filas'
+Slack : -1.190
+TNS   : -34.523
+
+Type  : Fast 1200mV 0C Model Removal 'clk'
+Slack : 0.300
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -1377.801
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'iniciofractal'
+Slack : -3.000
+TNS   : -4.155
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'horizontal:horizontalBLK|cont:BIST4|temp[0]'
+Slack : -1.000
+TNS   : -164.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'controlDibujo:controlDibujoBLK|proof:Matriz|controlFractal:ControlFractalM|pr_state.filas'
+Slack : 0.341
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'controlDibujo:controlDibujoBLK|proof:Matriz|controlFractal:ControlFractalM|pr_state.finalizacion'
+Slack : 0.354
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'controlDibujo:controlDibujoBLK|proof:Matriz|controlFractal:ControlFractalM|pr_state.columnas'
+Slack : 0.366
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'horizontal:horizontalBLK|controlhorizontal:DUT|pr_state.dos'
+Slack : 0.406
+TNS   : 0.000
+
+------------------------------------------------------------

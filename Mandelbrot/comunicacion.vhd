@@ -1,0 +1,83 @@
+LIBRARY IEEE;
+USE ieee.std_logic_1164.all;
+USE ieee.numeric_std.all;
+----------------------------------------------------------------------------------------------------
+ENTITY comunicacion IS
+	GENERIC	( Contransmision	:			INTEGER  := 868;  
+				  Ntransmision		:			INTEGER  := 10;
+				  Conbits     		:			INTEGER  := 280;  
+				  Nbits				:			INTEGER  := 9;
+				  MAX_WIDTH			:			INTEGER	:= 280
+				  );
+	PORT		(	  clk	               :	IN 	STD_LOGIC;
+					  rst	               :	IN 	STD_LOGIC;
+					  iniciotransmision	:	IN		STD_LOGIC:='0';
+					  transmitir         :	IN 	STD_LOGIC_VECTOR(31 DOWNTO 0):="00000000000000000000000000000000";
+					  tx						:	OUT	STD_LOGIC;
+					  salida					:	OUT	STD_LOGIC
+				); 
+	END ENTITY;
+	
+	
+	
+ARCHITECTURE comunicacionARCH OF comunicacion IS
+	
+SIGNAL conttrMaxTick	   : STD_LOGIC;
+SIGNAL contbitsMaxTick	: STD_LOGIC;
+SIGNAL syn_clr_bits		: STD_LOGIC;
+SIGNAL syn_clr_tr			: STD_LOGIC;
+SIGNAL countbits			: INTEGER;
+SIGNAL ena_contbits		: STD_LOGIC;
+SIGNAL ena_conttr			: STD_LOGIC;
+SIGNAL ena_guardar		: STD_LOGIC;
+SIGNAL ena_desplazar		: STD_LOGIC;
+--SIGNAL señal				: STD_LOGIC_VECTOR(MAX_WIDTH-1 DOWNTO 0);
+--SIGNAL salida1				: STD_LOGIC;
+BEGIN
+--salida1 <= salida;
+control: ENTITY work.controltransmision
+	PORT MAP	( clk	               => clk, 
+				  rst	               => rst,
+				  iniciotransmision	=> iniciotransmision,
+				  conttrMaxTick      => conttrMaxTick,
+				  contbitsMaxTick		=> contbitsMaxTick,
+				  countbits				=> countbits,
+				 -- salida					=> salida1,
+				  syn_clr_tr			=> syn_clr_tr,
+				  syn_clr_bits			=> syn_clr_bits,
+				  ena_conttr			=> ena_conttr,
+				  ena_contbits			=> ena_contbits,
+				  ena_guardar			=> ena_guardar,
+				  ena_desplazar		=> ena_desplazar,
+				  tx						=> tx
+				  ); 
+
+conttrasmision: ENTITY work.cont
+	GENERIC MAP( Con      		=> Contransmision, 
+				  N					=>	Ntransmision)
+	PORT	MAP( clk					=>	clk,
+				  rst					=>	rst,
+				  syn_clr_cont 	=> syn_clr_tr,
+				  ena_cont		   =>	ena_conttr,
+				  contMaxTick	   =>	conttrMaxTick,
+				  salidacount		=> countbits);
+				  
+contbitss: ENTITY work.cont
+	GENERIC MAP( Con      		=> Conbits, 
+				  N					=>	Nbits)
+	PORT	MAP( clk					=>	clk,
+				  rst					=>	rst,
+				  syn_clr_cont 	=> syn_clr_bits, 
+				  ena_cont		   =>	ena_contbits,
+				  contMaxTick	   =>	contbitsMaxTick);
+				 
+registro: ENTITY work.serial_converter
+	GENERIC MAP( MAX_WIDTH		=> MAX_WIDTH)
+	PORT	MAP (clk				=>	clk,
+				 rst				=>	rst,
+				 ena_guardar	=> ena_guardar,
+				 ena_desplazar => ena_desplazar,
+				 transmitir		=>	transmitir,
+				 dout 			=>	salida);
+				  
+END ARCHITECTURE;

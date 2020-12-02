@@ -1,0 +1,225 @@
+LIBRARY IEEE;
+USE ieee.std_logic_1164.all;
+USE ieee.numeric_std.all;
+USE work.my_package.all;
+-------------------------------
+ENTITY proof IS
+	GENERIC	( 	Nv						:	INTEGER  := 11;
+					decimal				:	INTEGER	:=	32;
+					Confilas				:				INTEGER 	:= 480;
+					Nfilas				:				INTEGER  := 9;
+					Concolumnas			:				INTEGER 	:= 480;
+					Ncolumnas			:				INTEGER  := 9;
+					Coniteracion		:				INTEGER	:=	2000;
+					Niteraciones		:				INTEGER	:= 11
+				  );
+	PORT		( clk	               :	IN 	STD_LOGIC;
+				  rst	               :	IN 	STD_LOGIC;
+				  iniciofractal		:	IN		STD_LOGIC;
+				  wr_en					:	IN		STD_LOGIC;
+				  Cx						:	IN		SIGNED(decimal-1 DOWNTO 0):="11111100000000000000000000000000";
+				  Cy						:	IN		SIGNED(decimal-1 DOWNTO 0):="11111000000000000000000000000000";
+				  dx						:	IN		SIGNED(decimal-1 DOWNTO 0);
+				  dy						:	IN		SIGNED(decimal-1 DOWNTO 0);
+				  pixel					:	OUT	STD_LOGIC;
+				  finaliza				:	OUT	STD_LOGIC
+				  ); 
+END ENTITY;
+--------------------------------
+ARCHITECTURE Op OF proof IS
+
+SIGNAL	  color					: STD_LOGIC;
+SIGNAL	  ram_ena				: STD_LOGIC;
+SIGNAL	  ram_columnas_wr		: INTEGER;
+SIGNAL	  ram_filas_wr			: INTEGER;
+SIGNAL	  syn_clr_columnas	: STD_LOGIC;
+SIGNAL	  ena_contcolumnas	: STD_LOGIC;
+SIGNAL	  contcolumnas			: INTEGER;
+SIGNAL	  syn_clr_filas		: STD_LOGIC;
+SIGNAL	  ena_contfilas		: STD_LOGIC;
+SIGNAL	  contfilas				: INTEGER;
+SIGNAL	  syn_clr_iteracion	: STD_LOGIC;
+SIGNAL	  ena_contiteracion	: STD_LOGIC;
+SIGNAL 	  contiteracion		: INTEGER;
+SIGNAL 	  maxtic					: STD_LOGIC;
+SIGNAL	  xout					: SIGNED(decimal-1 DOWNTO 0);
+SIGNAL	  w_addr					: STD_LOGIC;
+SIGNAL	  wr_addr				: STD_LOGIC;
+SIGNAL	  wr_ena					: STD_LOGIC_VECTOR(1 DOWNTO 0);
+SIGNAL	  rd_addr				: STD_LOGIC;
+SIGNAL	  xnn						: SIGNED(decimal-1 DOWNTO 0);
+SIGNAL	  yout					: SIGNED(decimal-1 DOWNTO 0);
+SIGNAL	  ynn 					: SIGNED(decimal-1 DOWNTO 0);
+SIGNAL	  cxout 					: SIGNED(decimal-1 DOWNTO 0);
+SIGNAL	  cxin 					: SIGNED(decimal-1 DOWNTO 0);
+SIGNAL	  cyout 					: SIGNED(decimal-1 DOWNTO 0);
+SIGNAL	  cyin 					: SIGNED(decimal-1 DOWNTO 0);
+SIGNAL	  escapein				: SIGNED(decimal-1 DOWNTO 0);
+SIGNAL	  en_cx					: STD_LOGIC;
+SIGNAL	  en_cy					: STD_LOGIC;
+SIGNAL	  row_rd_addr			: INTEGER:= 0;
+SIGNAL	  column_rd_addr		: INTEGER:= 0;
+SIGNAL	  data_out				: STD_LOGIC;  
+SIGNAL	  estado					: STD_LOGIC_VECTOR(6 DOWNTO 0);
+SIGNAL	  ena_cx					: STD_LOGIC;
+SIGNAL	  ena_cy					: STD_LOGIC;
+
+	
+BEGIN
+
+--color1 						<= color;
+--ram_ena1 						<= ram_ena;
+--ram_columnas_wr1 			<= ram_columnas_wr;
+--ram_filas_wr1 				<= ram_filas_wr;
+--syn_clr_columnas1 			<= syn_clr_columnas;
+--ena_contcolumnas1 			<= ena_contcolumnas;
+--contcolumnas1 				<= contcolumnas;
+--syn_clr_filas1 				<= syn_clr_filas;
+--ena_contfilas1 				<= ena_contfilas;
+--contfilas1 					<= contfilas;
+--syn_clr_iteracion1 		<= syn_clr_iteracion;
+--ena_contiteracion1 		<= ena_contiteracion;
+--contiteracion1 				<= contiteracion;
+
+Xnnm: ENTITY work.register_file
+	PORT MAP(	clk				=>			clk,
+					wr_en				=>			wr_ena,
+					w_addr			=>			wr_addr,
+					r_addr			=>			rd_addr,
+					w_data			=>			xout,
+					r_data			=>			xnn
+					);
+					
+Ynnm: ENTITY work.register_file
+	PORT MAP(	clk				=>			clk,
+					wr_en				=>			wr_ena,
+					w_addr			=>			wr_addr,
+					r_addr			=>			rd_addr,
+					w_data			=>			yout,
+					r_data			=>			ynn
+					);
+
+Cxm: ENTITY work.register_c
+	PORT MAP(	clk				=>			clk,
+					en					=>			ena_cx,
+					rst				=>			rst,
+					c					=>			Cx,
+					d					=>			cxout,
+					q					=>			cxin
+					);
+					
+Cym: ENTITY work.register_c
+	PORT MAP(	clk				=>			clk,
+					en					=>			ena_cy,
+					rst				=>			rst,
+					c					=>			Cy,
+					d					=>			cyout,
+					q					=>			cyin
+					);
+
+OperacionBlock: ENTITY work.Operacion 
+	GENERIC	MAP( Nv			=> Nv,
+						decimal	=> decimal)
+	PORT		MAP( clk	      =>	clk,
+					  rst	      =>	rst,
+					  Xnn			=>	Xnn,
+					  Ynn			=>	Ynn,
+					  Cx			=>	Cx,
+					  Cy			=>	Cy,
+					  Xout		=>	Xout,
+					  Yout		=>	Yout
+					  ); 
+					  
+EscapeBlock: ENTITY work.Escape 
+	GENERIC	MAP( Nv			=>	Nv,
+				  decimal		=>	decimal)
+	PORT		MAP( clk	      =>	clk,
+				  rst	         =>	rst,
+				  Xnn				=> Xnn,
+				  Ynn				=>	Ynn,
+				  escapein			=>	escapein
+				  );
+
+MemoriaRAM:	ENTITY work.RAM				  
+	GENERIC MAP(Xmax			=>	480,
+					Ymax 			=>	480)
+	PORT	MAP(clk				=>	clk,
+				wr_en				=>	ram_ena,
+				data_in			=>	color,
+				row_rd_addr 	=>	row_rd_addr,
+				column_rd_addr =>	column_rd_addr,
+				row_wr_addr 	=>	ram_filas_wr,
+				column_wr_addr =>	ram_columnas_wr,
+				data_out			=>	data_out
+		  );	
+Columnas: ENTITY work.cont
+	GENERIC MAP( Con      		=> Concolumnas, 
+				  N					=>	Ncolumnas)
+	PORT	MAP( clk					=>	clk,
+				  rst					=>	rst,
+				  syn_clr_cont		=>	syn_clr_columnas,
+				  ena_cont		   =>	ena_contcolumnas,
+				  contMaxTick	   =>	maxtic,
+				  count_sout		=>	contcolumnas);
+				  
+Filas: ENTITY work.cont
+	GENERIC MAP( Con      		=> Confilas, 
+				  N					=>	Nfilas)
+	PORT	MAP( clk					=>	clk,
+				  rst					=>	rst,
+				  syn_clr_cont		=>	syn_clr_filas,
+				  ena_cont		   =>	ena_contfilas,
+				  contMaxTick	   =>	maxtic,
+				  count_sout			=>	contfilas);
+			
+Iteracion: ENTITY work.cont
+	GENERIC MAP( Con      		=> Coniteracion, 
+				  N					=>	Niteraciones)
+	PORT	MAP( clk					=>	clk,
+				  rst					=>	rst,
+				  syn_clr_cont		=>	syn_clr_iteracion,
+				  ena_cont		   =>	ena_contiteracion,
+				  contMaxTick	   =>	maxtic,
+				  count_sout			=>	contiteracion);			
+
+				  
+ControlFractalM:	ENTITY work.controlFractal
+	GENERIC	MAP(	Confilas		=>	480,
+					Nfilas			=> 9,
+					Concolumnas		=>	480,
+					Ncolumnas		=>	9,
+					Coniteracion	=>	2000,
+					Niteraciones	=>	11)
+	PORT		MAP( clk	               =>	clk,
+				  rst	               =>	rst,
+				  iniciofractal		=>	iniciofractal,
+				  contcolumnas			=>	contcolumnas,
+				  contfilas		   	=>	contfilas,
+				  contiteracion		=>	contiteracion,
+				  escapein				=>	escapein,
+				  cxin					=>	cxin,
+				  cyin					=>	cyin,
+				  dx						=>	dx,
+				  dy						=>	dy,
+				  syn_clr_filas		=> syn_clr_filas,
+				  syn_clr_columnas	=> syn_clr_columnas,
+				  syn_clr_iteracion	=>	syn_clr_iteracion,
+				  ena_cx					=> ena_cx,
+				  ena_cy					=> ena_cy,
+				  ena_contfilas      =>	ena_contfilas,
+				  ena_contcolumnas	=>	ena_contcolumnas,
+				  ena_contiteracion	=>	ena_contiteracion,
+				  wr_ena	   			=>	wr_ena,
+				  wr_addr				=>	wr_addr,
+				  rd_addr				=>	rd_addr,
+				  ram_ena				=> ram_ena,
+				  ram_columnas_wr		=> ram_columnas_wr,
+				  ram_filas_wr			=> ram_filas_wr,
+				  cxout					=>	cxout,
+				  cyout					=>	cyout,
+				  color					=>	color,
+				  estado					=>	estado,
+				  finaliza				=>	finaliza
+				  ); 		  
+				  
+END ARCHITECTURE;

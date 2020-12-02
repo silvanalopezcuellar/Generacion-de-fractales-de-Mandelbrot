@@ -1,0 +1,38 @@
+LIBRARY IEEE;
+USE ieee.std_logic_1164.all;
+USE ieee.numeric_std.all;
+----------------------------------
+ENTITY contS IS
+	GENERIC	( Con       		:			INTEGER := 10 ;  
+				  N					:			INTEGER := 4 );
+	PORT		( clk					:	IN		STD_LOGIC;
+				  rst					:	IN 	STD_LOGIC;
+				  syn_clr_cont	:	IN 	STD_LOGIC:='0';
+				  ena_cont		:	IN 	STD_LOGIC;
+				  contMaxTick	:	OUT 	STD_LOGIC;
+				  count_sout	:	OUT	INTEGER RANGE -1 to (Con));
+END ENTITY;
+---------------------------------- 
+
+----------------------------------
+ARCHITECTURE contArchi OF contS IS
+	SIGNAL	count_s		:	INTEGER RANGE -1 to (Con);
+BEGIN
+	PROCESS(clk,rst)
+		VARIABLE temp	:	INTEGER RANGE -1 to (Con);
+	BEGIN
+		IF(rst = '0') THEN
+			temp	:=	0;
+		ELSIF(RISING_EDGE(clk)) THEN
+			IF (ena_cont = '1') THEN
+				IF (temp=(Con)) THEN
+					temp := (-1);
+				END IF;
+				temp := temp + 1;
+			END IF;
+		END IF;
+		count_s	<=	temp;
+	END PROCESS;
+	count_sout <= count_s;
+	contMaxTick	<=	'1' WHEN (count_s) = (Con) ELSE '0';
+END ARCHITECTURE contArchi;

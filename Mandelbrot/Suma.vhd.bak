@@ -1,0 +1,33 @@
+LIBRARY IEEE;
+USE ieee.std_logic_1164.all;
+USE ieee.numeric_std.all;
+USE work.my_package.all;
+-------------------------------
+ENTITY Suma IS
+	GENERIC	( decimal				:	INTEGER);
+	PORT		( ecx	               :	IN 	STD_LOGIC;
+				  ecy	               :	IN 	STD_LOGIC;
+				  cxin					:	IN		SIGNED(decimal-1 DOWNTO 0);
+				  dxx						:	IN		SIGNED(decimal-1 DOWNTO 0);
+				  cyin					:	IN		SIGNED(decimal-1 DOWNTO 0);
+				  dyy						:	IN		SIGNED(decimal-1 DOWNTO 0);
+				  cxout					:	OUT	SIGNED(decimal-1 DOWNTO 0);
+				  cyout					:	OUT	SIGNED(decimal-1 DOWNTO 0);
+				  ); 
+END ENTITY;
+--------------------------------
+ARCHITECTURE Opeope OF Suma IS
+
+	
+BEGIN
+
+	PROCESS(ecx,ecy)
+	BEGIN
+		IF	(ecx='1') THEN
+			cxout <= cxin + dxx;
+		ELSIF (ecy='1') THEN
+			cyout <= cyin + dyy;
+		END IF;
+	END PROCESS;
+
+END ARCHITECTURE;

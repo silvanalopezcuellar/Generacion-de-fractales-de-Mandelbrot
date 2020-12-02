@@ -1,0 +1,413 @@
+Simulator report for mandelbrot
+Wed May 29 17:49:07 2019
+Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 182 nodes    ;
+; Simulation Coverage         ;      35.71 % ;
+; Total Number of Transitions ; 866          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone III  ;
++-----------------------------+--------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                     ;
++--------------------------------------------------------------------------------------------+-----------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                                   ; Default Value ;
++--------------------------------------------------------------------------------------------+-----------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                                ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                      ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                       ;               ;
+; Vector input source                                                                        ; C:/Users/PAOLA/Downloads/mandelbrot/controldibujosimu.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                        ; On            ;
+; Check outputs                                                                              ; Off                                                       ; Off           ;
+; Report simulation coverage                                                                 ; On                                                        ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                        ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                        ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                        ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                       ; Off           ;
+; Detect glitches                                                                            ; Off                                                       ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                       ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                       ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                       ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                       ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                        ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                                ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                       ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                       ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                      ; Auto          ;
+; Interconnect Delay Model Type                                                              ; Transport                                                 ; Transport     ;
+; Cell Delay Model Type                                                                      ; Transport                                                 ; Transport     ;
++--------------------------------------------------------------------------------------------+-----------------------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      35.71 % ;
+; Total nodes checked                                 ; 182          ;
+; Total output ports checked                          ; 182          ;
+; Total output ports with complete 1/0-value coverage ; 65           ;
+; Total output ports with no 1/0-value coverage       ; 67           ;
+; Total output ports with no 1-value coverage         ; 104          ;
+; Total output ports with no 0-value coverage         ; 80           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                      ;
++---------------------------------------+---------------------------------------+------------------+
+; Node Name                             ; Output Port Name                      ; Output Port Type ;
++---------------------------------------+---------------------------------------+------------------+
+; |controlDibujo|combinational~4        ; |controlDibujo|combinational~4        ; out0             ;
+; |controlDibujo|nx_state               ; |controlDibujo|nx_state               ; out              ;
+; |controlDibujo|nx_state~0             ; |controlDibujo|nx_state~0             ; out0             ;
+; |controlDibujo|nx_state~1             ; |controlDibujo|nx_state~1             ; out              ;
+; |controlDibujo|nx_state~2             ; |controlDibujo|nx_state~2             ; out0             ;
+; |controlDibujo|numeropar              ; |controlDibujo|numeropar              ; out              ;
+; |controlDibujo|numeropar~0            ; |controlDibujo|numeropar~0            ; out              ;
+; |controlDibujo|numeropar~1            ; |controlDibujo|numeropar~1            ; out0             ;
+; |controlDibujo|numeropar~2            ; |controlDibujo|numeropar~2            ; out0             ;
+; |controlDibujo|clk                    ; |controlDibujo|clk                    ; out              ;
+; |controlDibujo|counth[0]              ; |controlDibujo|counth[0]              ; out              ;
+; |controlDibujo|counth[1]              ; |controlDibujo|counth[1]              ; out              ;
+; |controlDibujo|counth[2]              ; |controlDibujo|counth[2]              ; out              ;
+; |controlDibujo|counth[3]              ; |controlDibujo|counth[3]              ; out              ;
+; |controlDibujo|counth[4]              ; |controlDibujo|counth[4]              ; out              ;
+; |controlDibujo|variablex              ; |controlDibujo|variablex              ; pin_out          ;
+; |controlDibujo|conteos[0]             ; |controlDibujo|conteos[0]             ; pin_out          ;
+; |controlDibujo|conteos[1]             ; |controlDibujo|conteos[1]             ; pin_out          ;
+; |controlDibujo|conteos[2]             ; |controlDibujo|conteos[2]             ; pin_out          ;
+; |controlDibujo|conteos[3]             ; |controlDibujo|conteos[3]             ; pin_out          ;
+; |controlDibujo|conth:COLUMNAS|temp~6  ; |controlDibujo|conth:COLUMNAS|temp~6  ; out              ;
+; |controlDibujo|conth:COLUMNAS|temp~7  ; |controlDibujo|conth:COLUMNAS|temp~7  ; out              ;
+; |controlDibujo|conth:COLUMNAS|temp~8  ; |controlDibujo|conth:COLUMNAS|temp~8  ; out              ;
+; |controlDibujo|conth:COLUMNAS|temp~9  ; |controlDibujo|conth:COLUMNAS|temp~9  ; out              ;
+; |controlDibujo|conth:COLUMNAS|temp~15 ; |controlDibujo|conth:COLUMNAS|temp~15 ; out              ;
+; |controlDibujo|conth:COLUMNAS|temp~16 ; |controlDibujo|conth:COLUMNAS|temp~16 ; out              ;
+; |controlDibujo|conth:COLUMNAS|temp~17 ; |controlDibujo|conth:COLUMNAS|temp~17 ; out              ;
+; |controlDibujo|conth:COLUMNAS|temp~18 ; |controlDibujo|conth:COLUMNAS|temp~18 ; out              ;
+; |controlDibujo|conth:COLUMNAS|temp~19 ; |controlDibujo|conth:COLUMNAS|temp~19 ; out              ;
+; |controlDibujo|conth:COLUMNAS|temp~25 ; |controlDibujo|conth:COLUMNAS|temp~25 ; out              ;
+; |controlDibujo|conth:COLUMNAS|temp~26 ; |controlDibujo|conth:COLUMNAS|temp~26 ; out              ;
+; |controlDibujo|conth:COLUMNAS|temp~27 ; |controlDibujo|conth:COLUMNAS|temp~27 ; out              ;
+; |controlDibujo|conth:COLUMNAS|temp~28 ; |controlDibujo|conth:COLUMNAS|temp~28 ; out              ;
+; |controlDibujo|conth:COLUMNAS|temp~29 ; |controlDibujo|conth:COLUMNAS|temp~29 ; out              ;
+; |controlDibujo|conth:COLUMNAS|temp[3] ; |controlDibujo|conth:COLUMNAS|temp[3] ; regout           ;
+; |controlDibujo|conth:COLUMNAS|temp[2] ; |controlDibujo|conth:COLUMNAS|temp[2] ; regout           ;
+; |controlDibujo|conth:COLUMNAS|temp[1] ; |controlDibujo|conth:COLUMNAS|temp[1] ; regout           ;
+; |controlDibujo|conth:COLUMNAS|temp[0] ; |controlDibujo|conth:COLUMNAS|temp[0] ; regout           ;
+; |controlDibujo|LessThan1~0            ; |controlDibujo|LessThan1~0            ; out0             ;
+; |controlDibujo|LessThan1~1            ; |controlDibujo|LessThan1~1            ; out0             ;
+; |controlDibujo|LessThan1~2            ; |controlDibujo|LessThan1~2            ; out0             ;
+; |controlDibujo|LessThan1~3            ; |controlDibujo|LessThan1~3            ; out0             ;
+; |controlDibujo|LessThan1~4            ; |controlDibujo|LessThan1~4            ; out0             ;
+; |controlDibujo|LessThan1~5            ; |controlDibujo|LessThan1~5            ; out0             ;
+; |controlDibujo|LessThan3~0            ; |controlDibujo|LessThan3~0            ; out0             ;
+; |controlDibujo|LessThan3~1            ; |controlDibujo|LessThan3~1            ; out0             ;
+; |controlDibujo|LessThan3~2            ; |controlDibujo|LessThan3~2            ; out0             ;
+; |controlDibujo|LessThan3~3            ; |controlDibujo|LessThan3~3            ; out0             ;
+; |controlDibujo|LessThan3~4            ; |controlDibujo|LessThan3~4            ; out0             ;
+; |controlDibujo|LessThan3~5            ; |controlDibujo|LessThan3~5            ; out0             ;
+; |controlDibujo|LessThan3~6            ; |controlDibujo|LessThan3~6            ; out0             ;
+; |controlDibujo|LessThan3~7            ; |controlDibujo|LessThan3~7            ; out0             ;
+; |controlDibujo|conth:COLUMNAS|Add0~0  ; |controlDibujo|conth:COLUMNAS|Add0~0  ; out0             ;
+; |controlDibujo|conth:COLUMNAS|Add0~1  ; |controlDibujo|conth:COLUMNAS|Add0~1  ; out0             ;
+; |controlDibujo|conth:COLUMNAS|Add0~2  ; |controlDibujo|conth:COLUMNAS|Add0~2  ; out0             ;
+; |controlDibujo|conth:COLUMNAS|Add0~3  ; |controlDibujo|conth:COLUMNAS|Add0~3  ; out0             ;
+; |controlDibujo|conth:COLUMNAS|Add0~4  ; |controlDibujo|conth:COLUMNAS|Add0~4  ; out0             ;
+; |controlDibujo|conth:COLUMNAS|Add0~5  ; |controlDibujo|conth:COLUMNAS|Add0~5  ; out0             ;
+; |controlDibujo|conth:COLUMNAS|Add0~6  ; |controlDibujo|conth:COLUMNAS|Add0~6  ; out0             ;
+; |controlDibujo|conth:COLUMNAS|Add0~8  ; |controlDibujo|conth:COLUMNAS|Add0~8  ; out0             ;
+; |controlDibujo|conth:COLUMNAS|Add0~10 ; |controlDibujo|conth:COLUMNAS|Add0~10 ; out0             ;
+; |controlDibujo|conth:COLUMNAS|Add0~12 ; |controlDibujo|conth:COLUMNAS|Add0~12 ; out0             ;
+; |controlDibujo|conth:COLUMNAS|Add0~14 ; |controlDibujo|conth:COLUMNAS|Add0~14 ; out0             ;
+; |controlDibujo|conth:COLUMNAS|Add0~16 ; |controlDibujo|conth:COLUMNAS|Add0~16 ; out0             ;
+; |controlDibujo|Matriz:Matriz|Equal1~0 ; |controlDibujo|Matriz:Matriz|Equal1~0 ; out0             ;
++---------------------------------------+---------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                               ;
++------------------------------------------+------------------------------------------+------------------+
+; Node Name                                ; Output Port Name                         ; Output Port Type ;
++------------------------------------------+------------------------------------------+------------------+
+; |controlDibujo|combinational~1           ; |controlDibujo|combinational~1           ; out0             ;
+; |controlDibujo|combinational~2           ; |controlDibujo|combinational~2           ; out0             ;
+; |controlDibujo|pr_state                  ; |controlDibujo|pr_state                  ; regout           ;
+; |controlDibujo|pixel[1]$latch            ; |controlDibujo|pixel[1]$latch            ; out              ;
+; |controlDibujo|pixel[2]$latch            ; |controlDibujo|pixel[2]$latch            ; out              ;
+; |controlDibujo|pixel[3]$latch            ; |controlDibujo|pixel[3]$latch            ; out              ;
+; |controlDibujo|pixel[4]$latch            ; |controlDibujo|pixel[4]$latch            ; out              ;
+; |controlDibujo|pixel[5]$latch            ; |controlDibujo|pixel[5]$latch            ; out              ;
+; |controlDibujo|pixel[6]$latch            ; |controlDibujo|pixel[6]$latch            ; out              ;
+; |controlDibujo|pixel[7]$latch            ; |controlDibujo|pixel[7]$latch            ; out              ;
+; |controlDibujo|pixel[8]$latch            ; |controlDibujo|pixel[8]$latch            ; out              ;
+; |controlDibujo|pixel[9]$latch            ; |controlDibujo|pixel[9]$latch            ; out              ;
+; |controlDibujo|pixel[10]$latch           ; |controlDibujo|pixel[10]$latch           ; out              ;
+; |controlDibujo|pixel[11]$latch           ; |controlDibujo|pixel[11]$latch           ; out              ;
+; |controlDibujo|synch                     ; |controlDibujo|synch                     ; out              ;
+; |controlDibujo|pixel[0]$latch            ; |controlDibujo|pixel[0]$latch            ; out              ;
+; |controlDibujo|rst                       ; |controlDibujo|rst                       ; out              ;
+; |controlDibujo|video_on                  ; |controlDibujo|video_on                  ; out              ;
+; |controlDibujo|countv[0]                 ; |controlDibujo|countv[0]                 ; out              ;
+; |controlDibujo|countv[1]                 ; |controlDibujo|countv[1]                 ; out              ;
+; |controlDibujo|countv[2]                 ; |controlDibujo|countv[2]                 ; out              ;
+; |controlDibujo|countv[3]                 ; |controlDibujo|countv[3]                 ; out              ;
+; |controlDibujo|countv[4]                 ; |controlDibujo|countv[4]                 ; out              ;
+; |controlDibujo|countv[5]                 ; |controlDibujo|countv[5]                 ; out              ;
+; |controlDibujo|countv[6]                 ; |controlDibujo|countv[6]                 ; out              ;
+; |controlDibujo|countv[7]                 ; |controlDibujo|countv[7]                 ; out              ;
+; |controlDibujo|countv[8]                 ; |controlDibujo|countv[8]                 ; out              ;
+; |controlDibujo|countv[9]                 ; |controlDibujo|countv[9]                 ; out              ;
+; |controlDibujo|countv[10]                ; |controlDibujo|countv[10]                ; out              ;
+; |controlDibujo|counth[6]                 ; |controlDibujo|counth[6]                 ; out              ;
+; |controlDibujo|counth[7]                 ; |controlDibujo|counth[7]                 ; out              ;
+; |controlDibujo|counth[8]                 ; |controlDibujo|counth[8]                 ; out              ;
+; |controlDibujo|counth[9]                 ; |controlDibujo|counth[9]                 ; out              ;
+; |controlDibujo|counth[10]                ; |controlDibujo|counth[10]                ; out              ;
+; |controlDibujo|pixel[0]                  ; |controlDibujo|pixel[0]                  ; pin_out          ;
+; |controlDibujo|pixel[1]                  ; |controlDibujo|pixel[1]                  ; pin_out          ;
+; |controlDibujo|pixel[2]                  ; |controlDibujo|pixel[2]                  ; pin_out          ;
+; |controlDibujo|pixel[3]                  ; |controlDibujo|pixel[3]                  ; pin_out          ;
+; |controlDibujo|pixel[4]                  ; |controlDibujo|pixel[4]                  ; pin_out          ;
+; |controlDibujo|pixel[5]                  ; |controlDibujo|pixel[5]                  ; pin_out          ;
+; |controlDibujo|pixel[6]                  ; |controlDibujo|pixel[6]                  ; pin_out          ;
+; |controlDibujo|pixel[7]                  ; |controlDibujo|pixel[7]                  ; pin_out          ;
+; |controlDibujo|pixel[8]                  ; |controlDibujo|pixel[8]                  ; pin_out          ;
+; |controlDibujo|pixel[9]                  ; |controlDibujo|pixel[9]                  ; pin_out          ;
+; |controlDibujo|pixel[10]                 ; |controlDibujo|pixel[10]                 ; pin_out          ;
+; |controlDibujo|pixel[11]                 ; |controlDibujo|pixel[11]                 ; pin_out          ;
+; |controlDibujo|conteos[4]                ; |controlDibujo|conteos[4]                ; pin_out          ;
+; |controlDibujo|conteos[5]                ; |controlDibujo|conteos[5]                ; pin_out          ;
+; |controlDibujo|conteos[6]                ; |controlDibujo|conteos[6]                ; pin_out          ;
+; |controlDibujo|conteos[7]                ; |controlDibujo|conteos[7]                ; pin_out          ;
+; |controlDibujo|conteos[8]                ; |controlDibujo|conteos[8]                ; pin_out          ;
+; |controlDibujo|conteos[9]                ; |controlDibujo|conteos[9]                ; pin_out          ;
+; |controlDibujo|conteos[10]               ; |controlDibujo|conteos[10]               ; pin_out          ;
+; |controlDibujo|conth:COLUMNAS|temp~0     ; |controlDibujo|conth:COLUMNAS|temp~0     ; out              ;
+; |controlDibujo|conth:COLUMNAS|temp~1     ; |controlDibujo|conth:COLUMNAS|temp~1     ; out              ;
+; |controlDibujo|conth:COLUMNAS|temp~2     ; |controlDibujo|conth:COLUMNAS|temp~2     ; out              ;
+; |controlDibujo|conth:COLUMNAS|temp~3     ; |controlDibujo|conth:COLUMNAS|temp~3     ; out              ;
+; |controlDibujo|conth:COLUMNAS|temp~4     ; |controlDibujo|conth:COLUMNAS|temp~4     ; out              ;
+; |controlDibujo|conth:COLUMNAS|temp~5     ; |controlDibujo|conth:COLUMNAS|temp~5     ; out              ;
+; |controlDibujo|conth:COLUMNAS|temp~10    ; |controlDibujo|conth:COLUMNAS|temp~10    ; out              ;
+; |controlDibujo|conth:COLUMNAS|temp~11    ; |controlDibujo|conth:COLUMNAS|temp~11    ; out              ;
+; |controlDibujo|conth:COLUMNAS|temp~12    ; |controlDibujo|conth:COLUMNAS|temp~12    ; out              ;
+; |controlDibujo|conth:COLUMNAS|temp~13    ; |controlDibujo|conth:COLUMNAS|temp~13    ; out              ;
+; |controlDibujo|conth:COLUMNAS|temp~14    ; |controlDibujo|conth:COLUMNAS|temp~14    ; out              ;
+; |controlDibujo|conth:COLUMNAS|temp~20    ; |controlDibujo|conth:COLUMNAS|temp~20    ; out              ;
+; |controlDibujo|conth:COLUMNAS|temp~21    ; |controlDibujo|conth:COLUMNAS|temp~21    ; out              ;
+; |controlDibujo|conth:COLUMNAS|temp~22    ; |controlDibujo|conth:COLUMNAS|temp~22    ; out              ;
+; |controlDibujo|conth:COLUMNAS|temp~23    ; |controlDibujo|conth:COLUMNAS|temp~23    ; out              ;
+; |controlDibujo|conth:COLUMNAS|temp~24    ; |controlDibujo|conth:COLUMNAS|temp~24    ; out              ;
+; |controlDibujo|conth:COLUMNAS|temp[9]    ; |controlDibujo|conth:COLUMNAS|temp[9]    ; regout           ;
+; |controlDibujo|conth:COLUMNAS|temp[8]    ; |controlDibujo|conth:COLUMNAS|temp[8]    ; regout           ;
+; |controlDibujo|conth:COLUMNAS|temp[7]    ; |controlDibujo|conth:COLUMNAS|temp[7]    ; regout           ;
+; |controlDibujo|conth:COLUMNAS|temp[6]    ; |controlDibujo|conth:COLUMNAS|temp[6]    ; regout           ;
+; |controlDibujo|conth:COLUMNAS|temp[5]    ; |controlDibujo|conth:COLUMNAS|temp[5]    ; regout           ;
+; |controlDibujo|conth:COLUMNAS|temp[4]    ; |controlDibujo|conth:COLUMNAS|temp[4]    ; regout           ;
+; |controlDibujo|Matriz:Matriz|pixelMatriz ; |controlDibujo|Matriz:Matriz|pixelMatriz ; out0             ;
+; |controlDibujo|LessThan1~6               ; |controlDibujo|LessThan1~6               ; out0             ;
+; |controlDibujo|LessThan1~7               ; |controlDibujo|LessThan1~7               ; out0             ;
+; |controlDibujo|LessThan1~8               ; |controlDibujo|LessThan1~8               ; out0             ;
+; |controlDibujo|LessThan1~9               ; |controlDibujo|LessThan1~9               ; out0             ;
+; |controlDibujo|LessThan1~10              ; |controlDibujo|LessThan1~10              ; out0             ;
+; |controlDibujo|LessThan1~11              ; |controlDibujo|LessThan1~11              ; out0             ;
+; |controlDibujo|LessThan1~12              ; |controlDibujo|LessThan1~12              ; out0             ;
+; |controlDibujo|LessThan2~0               ; |controlDibujo|LessThan2~0               ; out0             ;
+; |controlDibujo|LessThan2~1               ; |controlDibujo|LessThan2~1               ; out0             ;
+; |controlDibujo|LessThan2~2               ; |controlDibujo|LessThan2~2               ; out0             ;
+; |controlDibujo|LessThan2~3               ; |controlDibujo|LessThan2~3               ; out0             ;
+; |controlDibujo|LessThan2~4               ; |controlDibujo|LessThan2~4               ; out0             ;
+; |controlDibujo|LessThan2~5               ; |controlDibujo|LessThan2~5               ; out0             ;
+; |controlDibujo|LessThan3~9               ; |controlDibujo|LessThan3~9               ; out0             ;
+; |controlDibujo|LessThan3~10              ; |controlDibujo|LessThan3~10              ; out0             ;
+; |controlDibujo|LessThan3~11              ; |controlDibujo|LessThan3~11              ; out0             ;
+; |controlDibujo|LessThan3~12              ; |controlDibujo|LessThan3~12              ; out0             ;
+; |controlDibujo|LessThan3~13              ; |controlDibujo|LessThan3~13              ; out0             ;
+; |controlDibujo|LessThan3~14              ; |controlDibujo|LessThan3~14              ; out0             ;
+; |controlDibujo|LessThan3~15              ; |controlDibujo|LessThan3~15              ; out0             ;
+; |controlDibujo|LessThan3~16              ; |controlDibujo|LessThan3~16              ; out0             ;
+; |controlDibujo|conth:COLUMNAS|Add0~7     ; |controlDibujo|conth:COLUMNAS|Add0~7     ; out0             ;
+; |controlDibujo|conth:COLUMNAS|Add0~9     ; |controlDibujo|conth:COLUMNAS|Add0~9     ; out0             ;
+; |controlDibujo|conth:COLUMNAS|Add0~11    ; |controlDibujo|conth:COLUMNAS|Add0~11    ; out0             ;
+; |controlDibujo|conth:COLUMNAS|Add0~13    ; |controlDibujo|conth:COLUMNAS|Add0~13    ; out0             ;
+; |controlDibujo|conth:COLUMNAS|Add0~15    ; |controlDibujo|conth:COLUMNAS|Add0~15    ; out0             ;
+; |controlDibujo|conth:COLUMNAS|Equal0~0   ; |controlDibujo|conth:COLUMNAS|Equal0~0   ; out0             ;
+; |controlDibujo|Matriz:Matriz|Equal0~0    ; |controlDibujo|Matriz:Matriz|Equal0~0    ; out0             ;
++------------------------------------------+------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                               ;
++------------------------------------------+------------------------------------------+------------------+
+; Node Name                                ; Output Port Name                         ; Output Port Type ;
++------------------------------------------+------------------------------------------+------------------+
+; |controlDibujo|combinational~0           ; |controlDibujo|combinational~0           ; out0             ;
+; |controlDibujo|combinational~2           ; |controlDibujo|combinational~2           ; out0             ;
+; |controlDibujo|combinational~3           ; |controlDibujo|combinational~3           ; out0             ;
+; |controlDibujo|pr_state                  ; |controlDibujo|pr_state                  ; regout           ;
+; |controlDibujo|pixel[1]$latch            ; |controlDibujo|pixel[1]$latch            ; out              ;
+; |controlDibujo|pixel[2]$latch            ; |controlDibujo|pixel[2]$latch            ; out              ;
+; |controlDibujo|pixel[3]$latch            ; |controlDibujo|pixel[3]$latch            ; out              ;
+; |controlDibujo|pixel[4]$latch            ; |controlDibujo|pixel[4]$latch            ; out              ;
+; |controlDibujo|pixel[5]$latch            ; |controlDibujo|pixel[5]$latch            ; out              ;
+; |controlDibujo|pixel[6]$latch            ; |controlDibujo|pixel[6]$latch            ; out              ;
+; |controlDibujo|pixel[7]$latch            ; |controlDibujo|pixel[7]$latch            ; out              ;
+; |controlDibujo|pixel[8]$latch            ; |controlDibujo|pixel[8]$latch            ; out              ;
+; |controlDibujo|pixel[9]$latch            ; |controlDibujo|pixel[9]$latch            ; out              ;
+; |controlDibujo|pixel[10]$latch           ; |controlDibujo|pixel[10]$latch           ; out              ;
+; |controlDibujo|pixel[11]$latch           ; |controlDibujo|pixel[11]$latch           ; out              ;
+; |controlDibujo|pixel[0]$latch            ; |controlDibujo|pixel[0]$latch            ; out              ;
+; |controlDibujo|rst                       ; |controlDibujo|rst                       ; out              ;
+; |controlDibujo|video_on                  ; |controlDibujo|video_on                  ; out              ;
+; |controlDibujo|countv[0]                 ; |controlDibujo|countv[0]                 ; out              ;
+; |controlDibujo|countv[1]                 ; |controlDibujo|countv[1]                 ; out              ;
+; |controlDibujo|countv[2]                 ; |controlDibujo|countv[2]                 ; out              ;
+; |controlDibujo|countv[3]                 ; |controlDibujo|countv[3]                 ; out              ;
+; |controlDibujo|countv[4]                 ; |controlDibujo|countv[4]                 ; out              ;
+; |controlDibujo|countv[5]                 ; |controlDibujo|countv[5]                 ; out              ;
+; |controlDibujo|countv[6]                 ; |controlDibujo|countv[6]                 ; out              ;
+; |controlDibujo|countv[7]                 ; |controlDibujo|countv[7]                 ; out              ;
+; |controlDibujo|countv[8]                 ; |controlDibujo|countv[8]                 ; out              ;
+; |controlDibujo|countv[9]                 ; |controlDibujo|countv[9]                 ; out              ;
+; |controlDibujo|countv[10]                ; |controlDibujo|countv[10]                ; out              ;
+; |controlDibujo|counth[5]                 ; |controlDibujo|counth[5]                 ; out              ;
+; |controlDibujo|counth[6]                 ; |controlDibujo|counth[6]                 ; out              ;
+; |controlDibujo|counth[7]                 ; |controlDibujo|counth[7]                 ; out              ;
+; |controlDibujo|counth[8]                 ; |controlDibujo|counth[8]                 ; out              ;
+; |controlDibujo|counth[9]                 ; |controlDibujo|counth[9]                 ; out              ;
+; |controlDibujo|counth[10]                ; |controlDibujo|counth[10]                ; out              ;
+; |controlDibujo|pixel[0]                  ; |controlDibujo|pixel[0]                  ; pin_out          ;
+; |controlDibujo|pixel[1]                  ; |controlDibujo|pixel[1]                  ; pin_out          ;
+; |controlDibujo|pixel[2]                  ; |controlDibujo|pixel[2]                  ; pin_out          ;
+; |controlDibujo|pixel[3]                  ; |controlDibujo|pixel[3]                  ; pin_out          ;
+; |controlDibujo|pixel[4]                  ; |controlDibujo|pixel[4]                  ; pin_out          ;
+; |controlDibujo|pixel[5]                  ; |controlDibujo|pixel[5]                  ; pin_out          ;
+; |controlDibujo|pixel[6]                  ; |controlDibujo|pixel[6]                  ; pin_out          ;
+; |controlDibujo|pixel[7]                  ; |controlDibujo|pixel[7]                  ; pin_out          ;
+; |controlDibujo|pixel[8]                  ; |controlDibujo|pixel[8]                  ; pin_out          ;
+; |controlDibujo|pixel[9]                  ; |controlDibujo|pixel[9]                  ; pin_out          ;
+; |controlDibujo|pixel[10]                 ; |controlDibujo|pixel[10]                 ; pin_out          ;
+; |controlDibujo|pixel[11]                 ; |controlDibujo|pixel[11]                 ; pin_out          ;
+; |controlDibujo|conth:COLUMNAS|temp~20    ; |controlDibujo|conth:COLUMNAS|temp~20    ; out              ;
+; |controlDibujo|conth:COLUMNAS|temp~21    ; |controlDibujo|conth:COLUMNAS|temp~21    ; out              ;
+; |controlDibujo|conth:COLUMNAS|temp~22    ; |controlDibujo|conth:COLUMNAS|temp~22    ; out              ;
+; |controlDibujo|conth:COLUMNAS|temp~23    ; |controlDibujo|conth:COLUMNAS|temp~23    ; out              ;
+; |controlDibujo|conth:COLUMNAS|temp~24    ; |controlDibujo|conth:COLUMNAS|temp~24    ; out              ;
+; |controlDibujo|Matriz:Matriz|pixelMatriz ; |controlDibujo|Matriz:Matriz|pixelMatriz ; out0             ;
+; |controlDibujo|LessThan0~0               ; |controlDibujo|LessThan0~0               ; out0             ;
+; |controlDibujo|LessThan0~1               ; |controlDibujo|LessThan0~1               ; out0             ;
+; |controlDibujo|LessThan0~2               ; |controlDibujo|LessThan0~2               ; out0             ;
+; |controlDibujo|LessThan0~3               ; |controlDibujo|LessThan0~3               ; out0             ;
+; |controlDibujo|LessThan0~4               ; |controlDibujo|LessThan0~4               ; out0             ;
+; |controlDibujo|LessThan0~5               ; |controlDibujo|LessThan0~5               ; out0             ;
+; |controlDibujo|LessThan0~6               ; |controlDibujo|LessThan0~6               ; out0             ;
+; |controlDibujo|LessThan0~7               ; |controlDibujo|LessThan0~7               ; out0             ;
+; |controlDibujo|LessThan0~8               ; |controlDibujo|LessThan0~8               ; out0             ;
+; |controlDibujo|LessThan1~6               ; |controlDibujo|LessThan1~6               ; out0             ;
+; |controlDibujo|LessThan1~7               ; |controlDibujo|LessThan1~7               ; out0             ;
+; |controlDibujo|LessThan1~8               ; |controlDibujo|LessThan1~8               ; out0             ;
+; |controlDibujo|LessThan1~9               ; |controlDibujo|LessThan1~9               ; out0             ;
+; |controlDibujo|LessThan1~10              ; |controlDibujo|LessThan1~10              ; out0             ;
+; |controlDibujo|LessThan1~11              ; |controlDibujo|LessThan1~11              ; out0             ;
+; |controlDibujo|LessThan1~12              ; |controlDibujo|LessThan1~12              ; out0             ;
+; |controlDibujo|LessThan3~8               ; |controlDibujo|LessThan3~8               ; out0             ;
+; |controlDibujo|LessThan3~9               ; |controlDibujo|LessThan3~9               ; out0             ;
+; |controlDibujo|LessThan3~10              ; |controlDibujo|LessThan3~10              ; out0             ;
+; |controlDibujo|LessThan3~11              ; |controlDibujo|LessThan3~11              ; out0             ;
+; |controlDibujo|LessThan3~12              ; |controlDibujo|LessThan3~12              ; out0             ;
+; |controlDibujo|LessThan3~13              ; |controlDibujo|LessThan3~13              ; out0             ;
+; |controlDibujo|LessThan3~14              ; |controlDibujo|LessThan3~14              ; out0             ;
+; |controlDibujo|LessThan3~15              ; |controlDibujo|LessThan3~15              ; out0             ;
+; |controlDibujo|LessThan3~16              ; |controlDibujo|LessThan3~16              ; out0             ;
+; |controlDibujo|conth:COLUMNAS|Equal0~0   ; |controlDibujo|conth:COLUMNAS|Equal0~0   ; out0             ;
+; |controlDibujo|Matriz:Matriz|Equal0~0    ; |controlDibujo|Matriz:Matriz|Equal0~0    ; out0             ;
++------------------------------------------+------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.0 Build 156 04/24/2013 SJ Full Version
+    Info: Processing started: Wed May 29 17:49:05 2019
+Info: Command: quartus_sim --simulation_results_format=VWF mandelbrot -c mandelbrot
+Info (324025): Using vector source file "C:/Users/PAOLA/Downloads/mandelbrot/controldibujosimu.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      35.71 %
+Info (328052): Number of transitions in simulation is 866
+Info (324045): Vector file mandelbrot.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4471 megabytes
+    Info: Processing ended: Wed May 29 17:49:07 2019
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:00
+
+

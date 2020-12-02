@@ -1,0 +1,113 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -3.098
+TNS   : -155.371
+
+Type  : Slow 1200mV 85C Model Setup 'horizontal:horizontalBLK|controlhorizontal:DUT|pr_state.dos'
+Slack : -2.762
+TNS   : -8.242
+
+Type  : Slow 1200mV 85C Model Setup 'horizontal:horizontalBLK|cont:BIST4|temp[0]'
+Slack : -2.533
+TNS   : -51.251
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : -0.867
+TNS   : -5.801
+
+Type  : Slow 1200mV 85C Model Hold 'horizontal:horizontalBLK|cont:BIST4|temp[0]'
+Slack : 0.255
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'horizontal:horizontalBLK|controlhorizontal:DUT|pr_state.dos'
+Slack : 0.452
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -66.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'horizontal:horizontalBLK|cont:BIST4|temp[0]'
+Slack : -1.000
+TNS   : -29.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'horizontal:horizontalBLK|controlhorizontal:DUT|pr_state.dos'
+Slack : 0.482
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -2.671
+TNS   : -132.409
+
+Type  : Slow 1200mV 0C Model Setup 'horizontal:horizontalBLK|controlhorizontal:DUT|pr_state.dos'
+Slack : -2.513
+TNS   : -7.519
+
+Type  : Slow 1200mV 0C Model Setup 'horizontal:horizontalBLK|cont:BIST4|temp[0]'
+Slack : -2.141
+TNS   : -42.685
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : -0.870
+TNS   : -6.124
+
+Type  : Slow 1200mV 0C Model Hold 'horizontal:horizontalBLK|cont:BIST4|temp[0]'
+Slack : 0.279
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'horizontal:horizontalBLK|controlhorizontal:DUT|pr_state.dos'
+Slack : 0.546
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -66.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'horizontal:horizontalBLK|cont:BIST4|temp[0]'
+Slack : -1.000
+TNS   : -29.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'horizontal:horizontalBLK|controlhorizontal:DUT|pr_state.dos'
+Slack : 0.436
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -1.344
+TNS   : -59.951
+
+Type  : Fast 1200mV 0C Model Setup 'horizontal:horizontalBLK|controlhorizontal:DUT|pr_state.dos'
+Slack : -1.262
+TNS   : -3.484
+
+Type  : Fast 1200mV 0C Model Setup 'horizontal:horizontalBLK|cont:BIST4|temp[0]'
+Slack : -0.990
+TNS   : -16.744
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : -0.584
+TNS   : -4.203
+
+Type  : Fast 1200mV 0C Model Hold 'horizontal:horizontalBLK|cont:BIST4|temp[0]'
+Slack : -0.007
+TNS   : -0.007
+
+Type  : Fast 1200mV 0C Model Hold 'horizontal:horizontalBLK|controlhorizontal:DUT|pr_state.dos'
+Slack : 0.383
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -69.361
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'horizontal:horizontalBLK|cont:BIST4|temp[0]'
+Slack : -1.000
+TNS   : -29.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'horizontal:horizontalBLK|controlhorizontal:DUT|pr_state.dos'
+Slack : 0.415
+TNS   : 0.000
+
+------------------------------------------------------------

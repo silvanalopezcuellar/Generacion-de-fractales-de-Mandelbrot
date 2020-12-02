@@ -1,0 +1,770 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Usuario\Downloads\mandelbrot\simulation\modelsim
+Econt
+Z1 w1559220888
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dC:\Users\Usuario\Downloads\mandelbrot\simulation\modelsim
+Z6 8C:/Users/Usuario/Downloads/mandelbrot/cont.vhd
+Z7 FC:/Users/Usuario/Downloads/mandelbrot/cont.vhd
+l0
+L5
+VzCa8Fc=@4Uj[kf=Vc]ANZ0
+Z8 OV;C;10.1d;51
+31
+Z9 !s108 1559248343.731000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/Usuario/Downloads/mandelbrot/cont.vhd|
+Z11 !s107 C:/Users/Usuario/Downloads/mandelbrot/cont.vhd|
+Z12 o-93 -work work -O0
+Z13 tExplicit 1
+!s100 G69R=68cdzJ9@2cc2g6a=1
+!i10b 1
+Acontarchh
+R2
+R3
+R4
+Z14 DEx4 work 4 cont 0 22 zCa8Fc=@4Uj[kf=Vc]ANZ0
+l19
+L17
+VaP:a;2@;JkCE77^^=iHI_3
+R8
+31
+R9
+R10
+R11
+R12
+R13
+!s100 ]D7?lI]`7YCP?S]e2Jc`A2
+!i10b 1
+Econth
+Z15 w1559201050
+R2
+R3
+R4
+R5
+Z16 8C:/Users/Usuario/Downloads/mandelbrot/conth.vhd
+Z17 FC:/Users/Usuario/Downloads/mandelbrot/conth.vhd
+l0
+L5
+VQORT^Y>CbBWQbEKzOEH451
+R8
+31
+Z18 !s108 1559248343.546000
+Z19 !s90 -reportprogress|300|-93|-work|work|C:/Users/Usuario/Downloads/mandelbrot/conth.vhd|
+Z20 !s107 C:/Users/Usuario/Downloads/mandelbrot/conth.vhd|
+R12
+R13
+!s100 QaBc?e2?0b<CZfA@cZ2VL0
+!i10b 1
+Acontharch
+R2
+R3
+R4
+Z21 DEx4 work 5 conth 0 22 QORT^Y>CbBWQbEKzOEH451
+l21
+L19
+V?adlPRRa=OG0VG=A<l[[j2
+R8
+31
+R18
+R19
+R20
+R12
+R13
+!s100 TfZI?8Hj9;9H@=5WJCOEG0
+!i10b 1
+Econtm
+Z22 w1559224482
+R2
+R3
+R4
+R5
+Z23 8C:/Users/Usuario/Downloads/mandelbrot/contm.vhd
+Z24 FC:/Users/Usuario/Downloads/mandelbrot/contm.vhd
+l0
+L5
+VJVHK6H?B8cnJ@2gdFjbm[3
+R8
+31
+Z25 !s108 1559248339.812000
+Z26 !s90 -reportprogress|300|-93|-work|work|C:/Users/Usuario/Downloads/mandelbrot/contm.vhd|
+Z27 !s107 C:/Users/Usuario/Downloads/mandelbrot/contm.vhd|
+R12
+R13
+!s100 iP6W0f[IkPXZ5[bgCh9Xc0
+!i10b 1
+Acontmarch
+R2
+R3
+R4
+Z28 DEx4 work 5 contm 0 22 JVHK6H?B8cnJ@2gdFjbm[3
+l20
+L18
+VWliVS4Eo2SUAP0Z_o9gm?2
+R8
+31
+R25
+R26
+R27
+R12
+R13
+!s100 Y<;KmZX?8Nc`n4N<e1X2?3
+!i10b 1
+Econtroldibujo
+Z29 w1559246552
+R2
+R3
+R4
+R5
+Z30 8C:/Users/Usuario/Downloads/mandelbrot/controlDibujo.vhd
+Z31 FC:/Users/Usuario/Downloads/mandelbrot/controlDibujo.vhd
+l0
+L6
+VLC07@KK[eneQ6U5EY1I2A0
+R8
+31
+Z32 !s108 1559248345.003000
+Z33 !s90 -reportprogress|300|-93|-work|work|C:/Users/Usuario/Downloads/mandelbrot/controlDibujo.vhd|
+Z34 !s107 C:/Users/Usuario/Downloads/mandelbrot/controlDibujo.vhd|
+R12
+R13
+!s100 5Wji<9?eEYHn>n@IdD2>E2
+!i10b 1
+Acontroldibujoarch
+R21
+Z35 DPx4 work 10 my_package 0 22 bczcm7=C`M=DDh<PNacl<3
+Z36 DEx4 work 5 proof 0 22 3n1gX7ALI`DgUcPl:0mVL1
+R2
+R3
+R4
+Z37 DEx4 work 13 controldibujo 0 22 LC07@KK[eneQ6U5EY1I2A0
+l46
+L24
+VLBPK:O=S:S0@8nd]>9T_40
+R8
+31
+R32
+R33
+R34
+R12
+R13
+!s100 E@;Z<XX=S<nlBFG`7h=Q50
+!i10b 1
+Econtrolfractal
+Z38 w1559242850
+R2
+R3
+R4
+R5
+Z39 8C:/Users/Usuario/Downloads/mandelbrot/controlFractal.vhd
+Z40 FC:/Users/Usuario/Downloads/mandelbrot/controlFractal.vhd
+l0
+L5
+V_4^=W<S^jz2UBdf5aJ7b@1
+R8
+31
+Z41 !s108 1559248342.713000
+Z42 !s90 -reportprogress|300|-93|-work|work|C:/Users/Usuario/Downloads/mandelbrot/controlFractal.vhd|
+Z43 !s107 C:/Users/Usuario/Downloads/mandelbrot/controlFractal.vhd|
+R12
+R13
+!s100 3o5>BmOmok]F7I2F58jb?0
+!i10b 1
+Acontrolfractalarch
+R2
+R3
+R4
+Z44 DEx4 work 14 controlfractal 0 22 _4^=W<S^jz2UBdf5aJ7b@1
+l50
+L45
+V3Tb4>=N:CKROoZ^kQo=OC2
+R8
+31
+R41
+R42
+R43
+R12
+R13
+!s100 ^<H7[zG9MImTUPh3S6bgS3
+!i10b 1
+Econtrolhorizontal
+Z45 w1558999028
+R3
+R4
+R5
+Z46 8C:/Users/Usuario/Downloads/mandelbrot/controlhorizontal.vhd
+Z47 FC:/Users/Usuario/Downloads/mandelbrot/controlhorizontal.vhd
+l0
+L4
+V5QZC^^<foG?UW9JCG@DD=0
+R8
+31
+Z48 !s108 1559248343.392000
+Z49 !s90 -reportprogress|300|-93|-work|work|C:/Users/Usuario/Downloads/mandelbrot/controlhorizontal.vhd|
+Z50 !s107 C:/Users/Usuario/Downloads/mandelbrot/controlhorizontal.vhd|
+R12
+R13
+!s100 ]9fCfkc]>8HNbnTQdWLE31
+!i10b 1
+Aonehot
+R3
+R4
+Z51 DEx4 work 17 controlhorizontal 0 22 5QZC^^<foG?UW9JCG@DD=0
+l28
+L24
+V<Km6UJYCBBHGX>5KDJj]h3
+R8
+31
+R48
+R49
+R50
+R12
+R13
+!s100 0?74jY4G[KG:NhKZWCNm01
+!i10b 1
+Econtrolvertical
+Z52 w1558999030
+R3
+R4
+R5
+Z53 8C:/Users/Usuario/Downloads/mandelbrot/controlvertical.vhd
+Z54 FC:/Users/Usuario/Downloads/mandelbrot/controlvertical.vhd
+l0
+L4
+VWz3[`m:VE6VUfG8D=PZGE2
+R8
+31
+Z55 !s108 1559248343.230000
+Z56 !s90 -reportprogress|300|-93|-work|work|C:/Users/Usuario/Downloads/mandelbrot/controlvertical.vhd|
+Z57 !s107 C:/Users/Usuario/Downloads/mandelbrot/controlvertical.vhd|
+R12
+R13
+!s100 CL1C=66a=M46S5JTD]k6Z3
+!i10b 1
+Aonehot
+R3
+R4
+Z58 DEx4 work 15 controlvertical 0 22 Wz3[`m:VE6VUfG8D=PZGE2
+l28
+L24
+VelJU`E6UQ<<0ICOLiON`;1
+R8
+31
+R55
+R56
+R57
+R12
+R13
+!s100 PVJ`mTAWWa`i2cYgm=;RK1
+!i10b 1
+Econtv
+Z59 w1558999032
+R2
+R3
+R4
+R5
+Z60 8C:/Users/Usuario/Downloads/mandelbrot/contv.vhd
+Z61 FC:/Users/Usuario/Downloads/mandelbrot/contv.vhd
+l0
+L5
+VfCebTM@UUO:@f>k9M33gB2
+R8
+31
+Z62 !s108 1559248343.045000
+Z63 !s90 -reportprogress|300|-93|-work|work|C:/Users/Usuario/Downloads/mandelbrot/contv.vhd|
+Z64 !s107 C:/Users/Usuario/Downloads/mandelbrot/contv.vhd|
+R12
+R13
+!s100 ^4E[D3RCOT>kjaoMW<ZLC1
+!i10b 1
+Acontvarch
+R2
+R3
+R4
+Z65 DEx4 work 5 contv 0 22 fCebTM@UUO:@f>k9M33gB2
+l21
+L19
+VCJ;BfS]UN5nH202m7QMI71
+R8
+31
+R62
+R63
+R64
+R12
+R13
+!s100 fP>UD:>@RFLfHb0a?a_=@3
+!i10b 1
+Eescape
+Z66 w1559091222
+R35
+R2
+R3
+R4
+R5
+Z67 8C:/Users/Usuario/Downloads/mandelbrot/Escape.vhd
+Z68 FC:/Users/Usuario/Downloads/mandelbrot/Escape.vhd
+l0
+L6
+V?gZNR9@N4Nz_nH?h_f<EZ2
+R8
+31
+Z69 !s108 1559248344.417000
+Z70 !s90 -reportprogress|300|-93|-work|work|C:/Users/Usuario/Downloads/mandelbrot/Escape.vhd|
+Z71 !s107 C:/Users/Usuario/Downloads/mandelbrot/Escape.vhd|
+R12
+R13
+!s100 PS[MEG7>eCXe5GGhBcWnh0
+!i10b 1
+Aop
+R35
+R2
+R3
+R4
+Z72 DEx4 work 6 escape 0 22 ?gZNR9@N4Nz_nH?h_f<EZ2
+l23
+L17
+V?9JQZCi8THTH[zn?Yk2F<3
+R8
+31
+R69
+R70
+R71
+R12
+R13
+!s100 LA3?l;XAe2cVn0XcUN6YN3
+!i10b 1
+Ehorizontal
+R15
+R3
+R4
+R5
+Z73 8C:/Users/Usuario/Downloads/mandelbrot/horizontal.vhd
+Z74 FC:/Users/Usuario/Downloads/mandelbrot/horizontal.vhd
+l0
+L4
+V[lDmd88l12Xh49Lnkz;XV2
+R8
+31
+Z75 !s108 1559248344.232000
+Z76 !s90 -reportprogress|300|-93|-work|work|C:/Users/Usuario/Downloads/mandelbrot/horizontal.vhd|
+Z77 !s107 C:/Users/Usuario/Downloads/mandelbrot/horizontal.vhd|
+R12
+R13
+!s100 J>fiCHk4k>Nhi[R_SVN3W0
+!i10b 1
+Aarch
+R21
+R2
+R14
+R51
+R3
+R4
+Z78 DEx4 work 10 horizontal 0 22 [lDmd88l12Xh49Lnkz;XV2
+l43
+L26
+VZk?TMj?2:60K4kI0Vn:QX2
+R8
+31
+R75
+R76
+R77
+R12
+R13
+!s100 Y?LNK]XHZY8cjJ3;mDnB30
+!i10b 1
+Emandelbrot
+Z79 w1559204546
+R2
+R3
+R4
+R5
+Z80 8C:/Users/Usuario/Downloads/mandelbrot/mandelbrot.vhd
+Z81 FC:/Users/Usuario/Downloads/mandelbrot/mandelbrot.vhd
+l0
+L5
+VKm;Qe`7zMHie;gXm_IVhJ0
+!s100 I4KVI3:UdXU=X@M8]O4FZ2
+R8
+31
+!i10b 1
+Z82 !s108 1559248345.181000
+Z83 !s90 -reportprogress|300|-93|-work|work|C:/Users/Usuario/Downloads/mandelbrot/mandelbrot.vhd|
+Z84 !s107 C:/Users/Usuario/Downloads/mandelbrot/mandelbrot.vhd|
+R12
+R13
+Amandelbrotarch
+Z85 DEx4 work 8 vertical 0 22 1cJBXAzmI2k]CFko0<kbj3
+R78
+R37
+R2
+R3
+R4
+DEx4 work 10 mandelbrot 0 22 Km;Qe`7zMHie;gXm_IVhJ0
+l48
+L40
+V<o:J=4CUQl`z8SA>_J_Ok3
+!s100 _nFH`S<[m]<7OcN68RmdA0
+R8
+31
+!i10b 1
+R82
+R83
+R84
+R12
+R13
+Pmy_package
+R2
+R3
+R4
+R66
+R5
+Z86 8C:/Users/Usuario/Downloads/mandelbrot/my_package.vhd
+Z87 FC:/Users/Usuario/Downloads/mandelbrot/my_package.vhd
+l0
+L14
+Vbczcm7=C`M=DDh<PNacl<3
+R8
+31
+b1
+Z88 !s108 1559248342.873000
+Z89 !s90 -reportprogress|300|-93|-work|work|C:/Users/Usuario/Downloads/mandelbrot/my_package.vhd|
+Z90 !s107 C:/Users/Usuario/Downloads/mandelbrot/my_package.vhd|
+R12
+R13
+!s100 MJ_]UNh3_DF6oNo4j2z@X0
+!i10b 1
+Bbody
+R35
+R2
+R3
+R4
+l0
+L24
+VGDRI=l3LJPh[O8]l_=z^e2
+R8
+31
+R88
+R89
+R90
+R12
+R13
+nbody
+!s100 <S?6SFgAM[of]S]05k1c52
+!i10b 1
+Eoperacion
+R66
+R35
+R2
+R3
+R4
+R5
+Z91 8C:/Users/Usuario/Downloads/mandelbrot/Operacion.vhd
+Z92 FC:/Users/Usuario/Downloads/mandelbrot/Operacion.vhd
+l0
+L6
+VNiQclK8[UEi1zTS_;4ha>2
+R8
+31
+Z93 !s108 1559248344.048000
+Z94 !s90 -reportprogress|300|-93|-work|work|C:/Users/Usuario/Downloads/mandelbrot/Operacion.vhd|
+Z95 !s107 C:/Users/Usuario/Downloads/mandelbrot/Operacion.vhd|
+R12
+R13
+!s100 ]>QRR]=A?_9`SScD3TWMz0
+!i10b 1
+Aop
+R35
+R2
+R3
+R4
+Z96 DEx4 work 9 operacion 0 22 NiQclK8[UEi1zTS_;4ha>2
+l28
+L20
+VI^XMBiICWaX^Rmz:2F7a_0
+R8
+31
+R93
+R94
+R95
+R12
+R13
+!s100 _DV2oh`VY^z:VIZ<Sm_o00
+!i10b 1
+Eproof
+Z97 w1559245390
+R35
+R2
+R3
+R4
+R5
+Z98 8C:/Users/Usuario/Downloads/mandelbrot/proof.vhd
+Z99 FC:/Users/Usuario/Downloads/mandelbrot/proof.vhd
+l0
+L6
+V3n1gX7ALI`DgUcPl:0mVL1
+R8
+31
+Z100 !s108 1559248344.780000
+Z101 !s90 -reportprogress|300|-93|-work|work|C:/Users/Usuario/Downloads/mandelbrot/proof.vhd|
+Z102 !s107 C:/Users/Usuario/Downloads/mandelbrot/proof.vhd|
+R12
+R13
+!s100 B^b?e7@d^z1zj]ID?Q[P`2
+!i10b 1
+Aop
+R44
+Z103 DEx4 work 4 suma 0 22 GDNZ?9l^IFHzb6?Z?G;F90
+R28
+Z104 DEx4 work 3 ram 0 22 Md0b6m1P?e6ikUeGfoYX23
+R72
+R96
+Z105 DEx4 work 10 register_c 0 22 KLCQM9j9Od6A75f^i<]f@3
+Z106 DEx4 work 14 register_color 0 22 AgMHVPOH098DT@ni=`S`E3
+Z107 DEx4 work 13 register_file 0 22 BAXZR>en?HOHVTbA^lRoT2
+R35
+R2
+R3
+R4
+R36
+l83
+L43
+VeHVZPWnR?lnW@fY;7=T8M1
+R8
+31
+R100
+R101
+R102
+R12
+R13
+!s100 ?cOU4=DYMIY43SN_Y5LnE0
+!i10b 1
+Eram
+Z108 w1559207756
+R2
+R3
+R4
+R5
+Z109 8C:/Users/Usuario/Downloads/mandelbrot/RAM.vhd
+Z110 FC:/Users/Usuario/Downloads/mandelbrot/RAM.vhd
+l0
+L5
+VMd0b6m1P?e6ikUeGfoYX23
+R8
+31
+Z111 !s108 1559248342.559000
+Z112 !s90 -reportprogress|300|-93|-work|work|C:/Users/Usuario/Downloads/mandelbrot/RAM.vhd|
+Z113 !s107 C:/Users/Usuario/Downloads/mandelbrot/RAM.vhd|
+R12
+R13
+!s100 L1LW3KRPOUhaH>JYXe8iT1
+!i10b 1
+Abehavioral
+R2
+R3
+R4
+R104
+l26
+L21
+V;=QKL1;@:k_gUG>J4_d6`1
+R8
+31
+R111
+R112
+R113
+R12
+R13
+!s100 k7;OQ7:2bP2Ci9d8=3gG[3
+!i10b 1
+Eregister_c
+Z114 w1559194024
+R2
+R3
+R4
+R5
+Z115 8C:/Users/Usuario/Downloads/mandelbrot/register_c.vhd
+Z116 FC:/Users/Usuario/Downloads/mandelbrot/register_c.vhd
+l0
+L6
+VKLCQM9j9Od6A75f^i<]f@3
+R8
+31
+Z117 !s108 1559248342.413000
+Z118 !s90 -reportprogress|300|-93|-work|work|C:/Users/Usuario/Downloads/mandelbrot/register_c.vhd|
+Z119 !s107 C:/Users/Usuario/Downloads/mandelbrot/register_c.vhd|
+R12
+R13
+!s100 :W>O_XOG=BnKh_B528OUA0
+!i10b 1
+Aregister_c_arch
+R2
+R3
+R4
+R105
+l19
+L17
+VXTCXOQA0T`T8@>SKRT6^`1
+R8
+31
+R117
+R118
+R119
+R12
+R13
+!s100 U[4c36JX7zDc>^iTJeGM22
+!i10b 1
+Eregister_color
+Z120 w1559206094
+R2
+R3
+R4
+R5
+Z121 8C:/Users/Usuario/Downloads/mandelbrot/register_color.vhd
+Z122 FC:/Users/Usuario/Downloads/mandelbrot/register_color.vhd
+l0
+L6
+VAgMHVPOH098DT@ni=`S`E3
+R8
+31
+Z123 !s108 1559248342.124000
+Z124 !s90 -reportprogress|300|-93|-work|work|C:/Users/Usuario/Downloads/mandelbrot/register_color.vhd|
+Z125 !s107 C:/Users/Usuario/Downloads/mandelbrot/register_color.vhd|
+R12
+R13
+!s100 On8RBLYGi86jKE8JAPWk>3
+!i10b 1
+Aregister_color_arch
+R2
+R3
+R4
+R106
+l18
+L16
+V]clJ1FoL<mliYVSl8llXi2
+R8
+31
+R123
+R124
+R125
+R12
+R13
+!s100 >fGPLT>oV@X?CmL8XNQM71
+!i10b 1
+Eregister_file
+Z126 w1559185446
+R2
+R3
+R4
+R5
+Z127 8C:/Users/Usuario/Downloads/mandelbrot/register_file.vhd
+Z128 FC:/Users/Usuario/Downloads/mandelbrot/register_file.vhd
+l0
+L6
+VBAXZR>en?HOHVTbA^lRoT2
+R8
+31
+Z129 !s108 1559248342.275000
+Z130 !s90 -reportprogress|300|-93|-work|work|C:/Users/Usuario/Downloads/mandelbrot/register_file.vhd|
+Z131 !s107 C:/Users/Usuario/Downloads/mandelbrot/register_file.vhd|
+R12
+R13
+!s100 4@V:Y4AjBzCj6BlXL>?Sd2
+!i10b 1
+Artl
+R2
+R3
+R4
+R107
+l23
+L18
+VVLFo<:HYRlB=IYNYUHMK43
+R8
+31
+R129
+R130
+R131
+R12
+R13
+!s100 8Ji1R3zb>B9o@cR8bFc5_1
+!i10b 1
+Esuma
+Z132 w1559242782
+R35
+R2
+R3
+R4
+R5
+Z133 8C:/Users/Usuario/Downloads/mandelbrot/Suma.vhd
+Z134 FC:/Users/Usuario/Downloads/mandelbrot/Suma.vhd
+l0
+L6
+VGDNZ?9l^IFHzb6?Z?G;F90
+R8
+31
+Z135 !s108 1559248344.595000
+Z136 !s90 -reportprogress|300|-93|-work|work|C:/Users/Usuario/Downloads/mandelbrot/Suma.vhd|
+Z137 !s107 C:/Users/Usuario/Downloads/mandelbrot/Suma.vhd|
+R12
+R13
+!s100 CJIa[[lnMhj=Oae5]c^1R3
+!i10b 1
+Aopeope
+R35
+R2
+R3
+R4
+R103
+l24
+L21
+VOcIl^[h6ZH;7ESmX?bhml3
+R8
+31
+R135
+R136
+R137
+R12
+R13
+!s100 nOcMH8O^O873He7HoL1KT0
+!i10b 1
+Evertical
+Z138 w1558999040
+R3
+R4
+R5
+Z139 8C:/Users/Usuario/Downloads/mandelbrot/vertical.vhd
+Z140 FC:/Users/Usuario/Downloads/mandelbrot/vertical.vhd
+l0
+L4
+V1cJBXAzmI2k]CFko0<kbj3
+R8
+31
+Z141 !s108 1559248343.897000
+Z142 !s90 -reportprogress|300|-93|-work|work|C:/Users/Usuario/Downloads/mandelbrot/vertical.vhd|
+Z143 !s107 C:/Users/Usuario/Downloads/mandelbrot/vertical.vhd|
+R12
+R13
+!s100 fFA;AKeN>TY_O7iO2[GD?1
+!i10b 1
+Aarch
+R65
+R2
+R14
+R58
+R3
+R4
+R85
+l40
+L24
+VUa]o<lenSW@XFzA4SFOaa2
+R8
+31
+R141
+R142
+R143
+R12
+R13
+!s100 XA?XQKIX<:dNC=hPdH9i51
+!i10b 1

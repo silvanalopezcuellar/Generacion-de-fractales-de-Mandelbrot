@@ -1,0 +1,78 @@
+
+State Machine - |mandelbrot|comunicacion:serial|controltransmision:control|pr_state
+Name pr_state.cinco pr_state.cuatro pr_state.tres pr_state.dos pr_state.uno 
+pr_state.uno 0 0 0 0 0 
+pr_state.dos 0 0 0 1 1 
+pr_state.tres 0 0 1 0 1 
+pr_state.cuatro 0 1 0 0 1 
+pr_state.cinco 1 0 0 0 1 
+
+State Machine - |mandelbrot|vertical:verticalBLK|controlvertical:DUT|pr_state
+Name pr_state.cuatro pr_state.tres pr_state.dos pr_state.uno 
+pr_state.uno 0 0 0 0 
+pr_state.dos 0 0 1 1 
+pr_state.tres 0 1 0 1 
+pr_state.cuatro 1 0 0 1 
+
+State Machine - |mandelbrot|horizontal:horizontalBLK|controlhorizontal:DUT|pr_state
+Name pr_state.cuatro pr_state.tres pr_state.dos pr_state.uno 
+pr_state.uno 0 0 0 0 
+pr_state.dos 0 0 1 1 
+pr_state.tres 0 1 0 1 
+pr_state.cuatro 1 0 0 1 
+
+State Machine - |mandelbrot|controlDibujo:controlDibujoBLK|proof:Matriz|controlFractal:ControlFractalM|pr_state
+Name pr_state.finalizacion pr_state.escape pr_state.operacion pr_state.iteracion pr_state.columnas pr_state.filas pr_state.inicializacion pr_state.inicio 
+pr_state.inicio 0 0 0 0 0 0 0 0 
+pr_state.inicializacion 0 0 0 0 0 0 1 1 
+pr_state.filas 0 0 0 0 0 1 0 1 
+pr_state.columnas 0 0 0 0 1 0 0 1 
+pr_state.iteracion 0 0 0 1 0 0 0 1 
+pr_state.operacion 0 0 1 0 0 0 0 1 
+pr_state.escape 0 1 0 0 0 0 0 1 
+pr_state.finalizacion 1 0 0 0 0 0 0 1 
+
+State Machine - |mandelbrot|controlDibujo:controlDibujoBLK|zoom:Zoomm|controlzoom:controlzoomm|pr_state
+Name pr_state.rbt44 pr_state.rbt43 pr_state.rbt42 pr_state.rbt41 pr_state.rbt34 pr_state.rbt33 pr_state.rbt32 pr_state.rbt31 pr_state.rbt24 pr_state.rbt23 pr_state.rbt22 pr_state.rbt21 pr_state.rbt14 pr_state.rbt13 pr_state.rbt12 pr_state.rbt11 pr_state.rbt4 pr_state.rbt3 pr_state.rbT2 pr_state.rbt1 pr_state.rbt0 pr_state.cuatro4 pr_state.cuatro3 pr_state.cuatro2 pr_state.cuatro1 pr_state.tres4 pr_state.tres3 pr_state.tres2 pr_state.tres1 pr_state.dos4 pr_state.dos3 pr_state.dos2 pr_state.dos1 pr_state.uno4 pr_state.uno3 pr_state.uno2 pr_state.uno1 pr_state.cuatro pr_state.tres pr_state.dos pr_state.uno pr_state.cero 
+pr_state.cero 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+pr_state.uno 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+pr_state.dos 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+pr_state.tres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+pr_state.cuatro 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+pr_state.uno1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+pr_state.uno2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+pr_state.uno3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+pr_state.uno4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+pr_state.dos1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+pr_state.dos2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+pr_state.dos3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+pr_state.dos4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+pr_state.tres1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+pr_state.tres2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+pr_state.tres3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+pr_state.tres4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+pr_state.cuatro1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+pr_state.cuatro2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+pr_state.cuatro3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+pr_state.cuatro4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+pr_state.rbt0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+pr_state.rbt1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+pr_state.rbT2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+pr_state.rbt3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+pr_state.rbt4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+pr_state.rbt11 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+pr_state.rbt12 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+pr_state.rbt13 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+pr_state.rbt14 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+pr_state.rbt21 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+pr_state.rbt22 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+pr_state.rbt23 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+pr_state.rbt24 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+pr_state.rbt31 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+pr_state.rbt32 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+pr_state.rbt33 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+pr_state.rbt34 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+pr_state.rbt41 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+pr_state.rbt42 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+pr_state.rbt43 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+pr_state.rbt44 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 

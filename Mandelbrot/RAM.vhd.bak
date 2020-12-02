@@ -1,0 +1,37 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.numeric_std.all;
+-------------------------------------
+ENTITY RAM IS
+	GENERIC (Xmax : integer:= 20;
+				Ymax : integer:= 20);
+	PORT(	 	clk		  		: IN 	STD_LOGIC;
+				wr_en		  		: IN 	STD_LOGIC;
+				data_in	  		: IN 	STD_LOGIC;
+				--read
+				row_rd_addr 	: IN INTEGER ;
+				column_rd_addr : IN INTEGER ;
+				--write
+				row_wr_addr 	: IN INTEGER ;
+				column_wr_addr : IN INTEGER ;
+				data_out			: OUT STD_LOGIC
+		  );
+END RAM;
+--------------------------------------
+ARCHITECTURE behavioral OF RAM IS
+	TYPE data 		IS ARRAY (Ymax DOWNTO 0) OF STD_LOGIC;
+	TYPE mem_type 	IS ARRAY (Xmax DOWNTO 0) OF data;
+	SIGNAL 	mem : mem_type;
+	
+BEGIN
+	--write process
+	write_process: PROCESS(clk)
+	BEGIN
+		IF (rising_edge(clk)) THEN
+			IF(wr_en = '1') THEN
+				mem(row_wr_addr)(column_wr_addr)<= data_in;
+			END IF;
+			data_out <= mem(row_rd_addr)(column_rd_addr);
+		END IF;
+	END PROCESS;
+END behavioral;

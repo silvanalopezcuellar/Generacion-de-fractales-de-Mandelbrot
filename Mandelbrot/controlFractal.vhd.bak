@@ -1,0 +1,274 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE ieee.numeric_std.all;
+-------------------------------
+ENTITY controlFractal IS
+	GENERIC	(	Confilas				:				INTEGER;
+					Nfilas				:				INTEGER;
+					Concolumnas			:				INTEGER;
+					Ncolumnas			:				INTEGER;
+					Coniteracion		:				INTEGER;
+					Niteraciones		:				INTEGER;
+					cuatro				: 				SIGNED(31 DOWNTO 0) := "00010000000000000000000000000000";
+					ceros					:				SIGNED(31 DOWNTO 0) := "00000000000000000000000000000000"
+					);
+	PORT		( clk	               :	IN 		STD_LOGIC;
+				  rst	               :	IN 		STD_LOGIC;
+				  iniciofractal		: 	IN			STD_LOGIC;
+				  contcolumnas			:	IN			INTEGER:=0;
+				  contfilas		   	:	IN			INTEGER:=0;
+				  contiteracion		:	IN 		INTEGER:=0;
+				  escapein				: 	IN 		SIGNED(31 DOWNTO 0);
+				  cxin					:	IN			SIGNED(31 DOWNTO 0);
+				  cyin					:	IN			SIGNED(31 DOWNTO 0);
+				  dx						:	IN			SIGNED(31 DOWNTO 0);
+				  dy						:	IN			SIGNED(31 DOWNTO 0);
+				  syn_clr_filas		:	OUT		STD_LOGIC;
+				  syn_clr_columnas	:	OUT		STD_LOGIC;
+				  syn_clr_iteracion	:	OUT		STD_LOGIC;
+				  ena_cx					:	OUT		STD_LOGIC;
+				  ena_cy					:	OUT		STD_LOGIC;
+				  ena_contfilas      :	OUT		STD_LOGIC;
+				  ena_contcolumnas	: 	OUT		STD_LOGIC;
+				  ena_contiteracion	:	OUT		STD_LOGIC;
+				  wr_ena	   			:	OUT		STD_LOGIC_VECTOR(1 DOWNTO 0);
+				  wr_addr				:	OUT		STD_LOGIC;
+				  rd_addr				:	OUT		STD_LOGIC;
+				  ram_ena				:	OUT		STD_LOGIC;
+				  ram_columnas_wr		:	OUT		INTEGER:=0;
+				  ram_filas_wr			:	OUT		INTEGER:=0;
+				  cxout					:	OUT		SIGNED(31 DOWNTO 0);
+				  cyout					:	OUT		SIGNED(31 DOWNTO 0);
+				  color					:	OUT		STD_LOGIC;
+				  estado					:	OUT		STD_LOGIC_VECTOR(7 DOWNTO 0);
+				  finaliza				: 	OUT 		STD_LOGIC;
+				  ena_color				:	OUT		STD_LOGIC;
+				  rst_cy					:	OUT		STD_LOGIC;
+				  rst_cx					:	OUT		STD_LOGIC
+				  ); 
+END ENTITY;
+--------------------------------
+ARCHITECTURE controlFractalARCH OF controlFractal IS
+
+	TYPE state IS (inicio, inicializacion, filas, columnas, iteracion, operacion, escape, finalizacion);
+	SIGNAL pr_state	:	state;
+	SIGNAL xmom	: SIGNED (31 DOWNTO 0);
+	SIGNAL ymom	: SIGNED (31 DOWNTO 0);
+	
+BEGIN
+
+	combinational: PROCESS(rst, clk, pr_state, iniciofractal, contcolumnas, contfilas)
+	BEGIN
+		IF (rst = '0') THEN
+			pr_state	<=	inicio;
+		ELSIF (rising_edge(clk)) THEN
+		CASE pr_state IS
+				WHEN inicio	=>
+					ena_color			<=	'0';
+					rst_cy				<= '1';
+					rst_cx				<= '1';
+					estado				<= "00000001";
+					IF (iniciofractal = '1') THEN
+					pr_state 			<= inicializacion;
+					ELSIF (iniciofractal = '0') THEN
+					pr_state				<= inicio;
+					END IF;
+				
+				WHEN inicializacion =>
+					rst_cy				<= '0';
+					rst_cx				<= '0';
+					ena_color			<= '0';
+					ena_cx				<= '0';
+					ena_cy				<= '0';
+					ena_contfilas     <= '0';
+					ena_contcolumnas	<=	'0';
+					ena_contiteracion	<=	'0';
+					syn_clr_filas		<=	'1';
+					syn_clr_columnas	<=	'1';
+					syn_clr_iteracion	<=	'1';
+					ram_ena				<=	'0';
+					ram_columnas_wr	<=	0;
+					ram_filas_wr		<=	0;
+					wr_ena				<=	"01";
+				--	wr_addr				<= '0';
+				--	rd_addr				<= '0';
+					cxout					<= ceros;
+					cyout					<=	ceros;
+					xmom					<= ceros;
+					ymom					<= ceros;
+				--	color					<=	'0';
+					finaliza				<= '0';
+					estado				<= "00000010";
+					pr_state				<= filas;
+					
+				WHEN filas =>
+					rst_cy				<= '1';
+					rst_cx				<= '0';
+					ena_color			<=	'0';
+					ena_cx				<= '0';
+					ena_cy				<= '0';
+					ena_contfilas     <= '1';
+					ena_contcolumnas	<=	'0';
+					ena_contiteracion	<=	'0';
+					syn_clr_filas		<=	'0';
+					syn_clr_columnas	<=	'1';
+					syn_clr_iteracion	<=	'1';
+					ram_ena				<=	'0';
+					wr_ena				<=	"01";
+				--	wr_addr				<= '0';
+				--	rd_addr				<= '0';
+					xmom					<= cxin + dx;
+					cxout					<= xmom;
+					ymom					<= ceros;
+				--	color					<=	'0';
+					finaliza				<= '0';
+					estado				<= "00000100";
+					IF (contfilas < Confilas) THEN
+					pr_state 			<= columnas;
+					ELSIF (contfilas = Confilas) THEN
+					pr_state				<= finalizacion;
+					END IF;
+					
+				WHEN columnas	=>
+					rst_cy				<= '0';
+					rst_cx				<= '0';
+					ena_color			<= '0';
+					ena_cx				<= '1';
+					ena_cy				<= '0';
+					ena_contfilas     <= '0';
+					ena_contcolumnas	<=	'1';
+					ena_contiteracion	<=	'0';
+					syn_clr_filas		<=	'1';
+					syn_clr_columnas	<=	'0';
+					syn_clr_iteracion	<=	'1';
+					ram_ena				<=	'1';
+					ram_columnas_wr	<=	contcolumnas;
+					ram_filas_wr		<=	contfilas;
+					wr_ena				<=	"00";
+				--	wr_addr				<= '0';
+				--	rd_addr				<= '0';
+					cxout					<= xmom;
+				-- cy						<=	"00000000000000000000000000000000";
+				--	xmom					<= "00000000000000000000000000000000";
+					ymom					<= cyin + dy;
+					cyout					<= ymom;
+				--	color					<=	'0';
+					finaliza				<= '0';
+					estado				<= "00001000";
+					IF (contcolumnas < Concolumnas) THEN
+					pr_state 			<= iteracion;
+					ELSIF (contcolumnas = Concolumnas) THEN
+					pr_state				<= filas;
+					END IF;
+					
+				WHEN iteracion =>
+					rst_cy				<= '0';
+					rst_cx				<= '0';
+					ena_color			<=	'1';
+					ena_cx				<= '0';
+					ena_cy				<= '1';
+					syn_clr_filas		<=	'1';
+					syn_clr_columnas	<=	'1';
+					syn_clr_iteracion	<=	'0';
+					ena_contfilas     <= '0';
+					ena_contcolumnas	<=	'0';
+					ena_contiteracion	<=	'1';
+					ram_ena				<=	'0';
+					wr_ena				<=	"00";
+				--	wr_addr				<= '0';
+				--	rd_addr				<= '0';
+				--	cx						<= "00000000000000000000000000000000";
+					cyout					<=	ymom;
+				--	xmom					<= "00000000000000000000000000000000";
+				--	ymom					<= "00000000000000000000000000000000";
+					color					<=	'0';
+					finaliza				<= '0';
+					estado				<= "00010000";
+					IF (contiteracion < Coniteracion) THEN
+					pr_state 			<= operacion;
+					ELSIF (contiteracion = Coniteracion) THEN
+					pr_state				<= columnas;
+					END IF;
+					
+				WHEN operacion =>
+					rst_cy				<= '0';
+					rst_cx				<= '0';
+					ena_color			<=	'0';
+					ena_cx				<= '0';
+					ena_cy				<= '0';
+					syn_clr_filas		<=	'1';
+					syn_clr_columnas	<=	'1';
+					syn_clr_iteracion	<=	'1';
+					ena_contfilas     <= '0';
+					ena_contcolumnas	<=	'0';
+					ena_contiteracion	<=	'0';
+					ram_ena				<=	'0';
+					wr_ena				<=	"10";
+					wr_addr				<= '1';
+					rd_addr				<= '0';
+				--	cx						<= "00000000000000000000000000000000";
+				--	cy						<=	"00000000000000000000000000000000";
+				--	xmom					<= "00000000000000000000000000000000";
+				--	ymom					<= "00000000000000000000000000000000";
+				--	color					<=	'0';
+					finaliza				<= '0';
+					estado				<= "00100000";
+					pr_state 			<= escape;
+						
+				WHEN escape =>
+					rst_cy				<= '0';
+					rst_cx				<= '0';
+					ena_color			<=	'1';
+					ena_cx				<= '0';
+					ena_cy				<= '0';
+					syn_clr_filas		<=	'1';
+					syn_clr_columnas	<=	'1';
+					syn_clr_iteracion	<=	'1';
+					ena_contfilas     <= '0';
+					ena_contcolumnas	<=	'0';
+					ena_contiteracion	<=	'0';
+					ram_ena				<=	'0';
+					wr_ena				<=	"10";
+					wr_addr				<= '0';
+					rd_addr				<= '1';
+				--	cx						<= "00000000000000000000000000000000";
+				--	cy						<=	"00000000000000000000000000000000";
+				--	xmom					<= "00000000000000000000000000000000";
+				--	ymom					<= "00000000000000000000000000000000";
+					color					<=	'1';
+					finaliza				<= '0';
+					estado				<= "01000000";
+					IF (escapein >= cuatro) THEN
+					pr_state				<= columnas;
+					ELSE
+					pr_state 			<= iteracion;
+					END IF;
+					
+				WHEN finalizacion =>
+					rst_cy				<= '0';
+					rst_cx				<= '0';
+					ena_color			<=	'0';
+					ena_cx				<= '0';
+					ena_cy				<= '0';
+					syn_clr_filas		<=	'1';
+					syn_clr_columnas	<=	'1';
+					syn_clr_iteracion	<=	'1';
+					ena_contfilas     <= '0';
+					ena_contcolumnas	<=	'0';
+					ena_contiteracion	<=	'0';
+					ram_ena				<=	'0';
+				--	wr_ena_xnn			<=	"00";
+				--	wr_ena_ynn	  		<= "00";
+				--	wr_addr_xnn			<= '0';
+				--	wr_addr_ynn			<= '0';
+				--	cx						<= cx;
+				--	cy						<=	cy;
+				--	color					<=	'1';
+					finaliza				<= '1';
+					estado				<= "10000000";
+					pr_state 			<= inicio;
+			
+		  END CASE;
+		END IF;		
+	END PROCESS combinational;
+END ARCHITECTURE;

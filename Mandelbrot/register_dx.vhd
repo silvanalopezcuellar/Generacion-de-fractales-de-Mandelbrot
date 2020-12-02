@@ -1,0 +1,28 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.NUMERIC_STD.ALL;
+--USE IEEE.STD_LOGIC_ARITH.ALL;
+-------------------------
+ENTITY register_dx IS
+	GENERIC( DATA_WIDTH		:	INTEGER:= 32;
+				ADDR_WIDTH		:	INTEGER);
+	PORT(		clk				:	IN		STD_LOGIC;
+				r_addr			:	IN		INTEGER;
+				r_data			:	OUT	SIGNED(DATA_WIDTH-1 DOWNTO 0)				
+			);
+END ENTITY;
+--------------------------
+ARCHITECTURE rtl OF register_dx IS
+	TYPE mem_2d_type IS ARRAY (0 TO 2**ADDR_WIDTH-1) OF SIGNED((DATA_WIDTH)-1 DOWNTO 0);
+	SIGNAL array_reg: mem_2d_type;
+	SIGNAL en	:	STD_LOGIC_VECTOR(2**ADDR_WIDTH-1 DOWNTO 0);
+	signal cast : UNSIGNED(1 downto 0);
+BEGIN
+	--WRITE PROCESS
+	array_reg(0)<= "00000000000001100110011001100110";
+	array_reg(1)<= "00000000000000110011001100110011";
+	array_reg(2)<= "00000000000000011001100110011001";
+	
+	--READ
+	r_data <= array_reg(r_addr);
+END ARCHITECTURE;

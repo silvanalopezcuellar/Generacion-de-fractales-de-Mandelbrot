@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="mandelbrot">
+		<CBX_INST_ENTRY INSTANCE_NAME="|mandelbrot|controlDibujo:controlDibujoBLK|proof:Matriz|Escape:EscapeBlock|lpm_mult:Mult1" CBX_FILE_NAME="mult_r4t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|mandelbrot|controlDibujo:controlDibujoBLK|proof:Matriz|RAM:MemoriaRAM|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_hfh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|mandelbrot|controlDibujo:controlDibujoBLK|proof:Matriz|Escape:EscapeBlock|lpm_mult:Mult0" CBX_FILE_NAME="mult_r4t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|mandelbrot|controlDibujo:controlDibujoBLK|proof:Matriz|Escape:EscapeBlock|lpm_mult:Mult0_rtl_0" CBX_FILE_NAME="mult_r4t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|mandelbrot|controlDibujo:controlDibujoBLK|proof:Matriz|Escape:EscapeBlock|lpm_mult:Mult1_rtl_1" CBX_FILE_NAME="mult_r4t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|mandelbrot|controlDibujo:controlDibujoBLK|proof:Matriz|Operacion:OperacionBlock|lpm_mult:Mult2" CBX_FILE_NAME="mult_r4t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|mandelbrot|controlDibujo:controlDibujoBLK|proof:Matriz|RAM:MemoriaRAM|altsyncram:mem_rtl_0" CBX_FILE_NAME="altsyncram_r7h1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|mandelbrot|controlDibujo:controlDibujoBLK|proof:Matriz|RAM:MemoriaRAM|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_dfh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|mandelbrot|controlDibujo:controlDibujoBLK|proof:Matriz|RAM:MemoriaRAM|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_hfh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|mandelbrot|controlDibujo:controlDibujoBLK|proof:Matriz|RAM:MemoriaRAM|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_dfh.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

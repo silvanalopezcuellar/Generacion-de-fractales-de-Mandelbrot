@@ -1,0 +1,1791 @@
+# Reading C:/altera/13.0/modelsim_ase/tcl/vsim/pref.tcl 
+# do mandelbrot_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/Users/Usuario/Downloads/mandelbrot/contm.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity contm
+# -- Compiling architecture contmArch of contm
+# vcom -93 -work work {C:/Users/Usuario/Downloads/mandelbrot/register_color.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity register_color
+# -- Compiling architecture register_color_arch of register_color
+# vcom -93 -work work {C:/Users/Usuario/Downloads/mandelbrot/register_file.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity register_file
+# -- Compiling architecture rtl of register_file
+# vcom -93 -work work {C:/Users/Usuario/Downloads/mandelbrot/register_c.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity register_c
+# -- Compiling architecture register_c_arch of register_c
+# vcom -93 -work work {C:/Users/Usuario/Downloads/mandelbrot/RAM.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity RAM
+# -- Compiling architecture behavioral of RAM
+# vcom -93 -work work {C:/Users/Usuario/Downloads/mandelbrot/controlFractal.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity controlFractal
+# -- Compiling architecture controlFractalARCH of controlFractal
+# vcom -93 -work work {C:/Users/Usuario/Downloads/mandelbrot/my_package.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package my_package
+# -- Compiling package body my_package
+# -- Loading package my_package
+# vcom -93 -work work {C:/Users/Usuario/Downloads/mandelbrot/contv.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity contv
+# -- Compiling architecture contvArch of contv
+# vcom -93 -work work {C:/Users/Usuario/Downloads/mandelbrot/controlvertical.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity controlvertical
+# -- Compiling architecture oneHot of controlvertical
+# vcom -93 -work work {C:/Users/Usuario/Downloads/mandelbrot/controlhorizontal.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity controlhorizontal
+# -- Compiling architecture oneHot of controlhorizontal
+# vcom -93 -work work {C:/Users/Usuario/Downloads/mandelbrot/conth.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity conth
+# -- Compiling architecture conthArch of conth
+# vcom -93 -work work {C:/Users/Usuario/Downloads/mandelbrot/cont.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity cont
+# -- Compiling architecture contArchh of cont
+# vcom -93 -work work {C:/Users/Usuario/Downloads/mandelbrot/vertical.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity vertical
+# -- Compiling architecture ARCH of vertical
+# -- Loading entity controlvertical
+# -- Loading package NUMERIC_STD
+# -- Loading entity cont
+# -- Loading entity contv
+# vcom -93 -work work {C:/Users/Usuario/Downloads/mandelbrot/Operacion.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package my_package
+# -- Compiling entity Operacion
+# -- Compiling architecture Op of Operacion
+# vcom -93 -work work {C:/Users/Usuario/Downloads/mandelbrot/horizontal.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity horizontal
+# -- Compiling architecture ARCH of horizontal
+# -- Loading entity controlhorizontal
+# -- Loading package NUMERIC_STD
+# -- Loading entity cont
+# -- Loading entity conth
+# vcom -93 -work work {C:/Users/Usuario/Downloads/mandelbrot/Escape.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package my_package
+# -- Compiling entity Escape
+# -- Compiling architecture Op of Escape
+# vcom -93 -work work {C:/Users/Usuario/Downloads/mandelbrot/Suma.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package my_package
+# -- Compiling entity Suma
+# -- Compiling architecture Opeope of Suma
+# vcom -93 -work work {C:/Users/Usuario/Downloads/mandelbrot/proof.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package my_package
+# -- Compiling entity proof
+# -- Compiling architecture Op of proof
+# -- Loading entity register_file
+# -- Loading entity register_color
+# -- Loading entity register_c
+# -- Loading entity Operacion
+# -- Loading entity Escape
+# -- Loading entity RAM
+# -- Loading entity contm
+# -- Loading entity Suma
+# -- Loading entity controlFractal
+# vcom -93 -work work {C:/Users/Usuario/Downloads/mandelbrot/controlDibujo.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity controlDibujo
+# -- Compiling architecture controlDibujoARCH of controlDibujo
+# -- Loading package my_package
+# -- Loading entity proof
+# -- Loading entity conth
+# vcom -93 -work work {C:/Users/Usuario/Downloads/mandelbrot/mandelbrot.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mandelbrot
+# -- Compiling architecture mandelbrotARCH of mandelbrot
+# -- Loading entity controlDibujo
+# -- Loading entity horizontal
+# ** Warning: C:/Users/Usuario/Downloads/mandelbrot/mandelbrot.vhd(83): Cannot associate port "linea" of mode OUT with port "linea2" of mode BUFFER.
+# -- Loading entity vertical
+# 
+cd C:/Users/Usuario/Downloads/mandelbrot
+# reading C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini
+vlib work
+vcom -reportprogress 300 -work work C:/Users/Usuario/Downloads/mandelbrot/cont.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity cont
+# -- Compiling architecture contArchh of cont
+vcom -reportprogress 300 -work work C:/Users/Usuario/Downloads/mandelbrot/conth.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity conth
+# -- Compiling architecture conthArch of conth
+vcom -reportprogress 300 -work work C:/Users/Usuario/Downloads/mandelbrot/contm.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity contm
+# -- Compiling architecture contmArch of contm
+vcom -reportprogress 300 -work work C:/Users/Usuario/Downloads/mandelbrot/ControlBarraL.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ControlBarraL
+# -- Compiling architecture bar of ControlBarraL
+vcom -reportprogress 300 -work work C:/Users/Usuario/Downloads/mandelbrot/ControlBarraR.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ControlBarraR
+# -- Compiling architecture bar of ControlBarraR
+vcom -reportprogress 300 -work work C:/Users/Usuario/Downloads/mandelbrot/ControlBolita.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ControlBolita
+# -- Compiling architecture bola of ControlBolita
+vcom -reportprogress 300 -work work C:/Users/Usuario/Downloads/mandelbrot/controlDibujo.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity controlDibujo
+# -- Compiling architecture controlDibujoARCH of controlDibujo
+# ** Error: (vcom-11) Could not find work.proof.
+# 
+# ** Error: C:/Users/Usuario/Downloads/mandelbrot/controlDibujo.vhd(76): (vcom-1195) Cannot find expanded name "work.proof".
+# 
+# ** Error: C:/Users/Usuario/Downloads/mandelbrot/controlDibujo.vhd(76): Unknown expanded name.
+# -- Loading entity conth
+# ** Error: C:/Users/Usuario/Downloads/mandelbrot/controlDibujo.vhd(160): VHDL Compiler exiting
+vcom -reportprogress 300 -work work C:/Users/Usuario/Downloads/mandelbrot/controlFractal.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity controlFractal
+# -- Compiling architecture controlFractalARCH of controlFractal
+vcom -reportprogress 30 -work work C:/Users/Usuario/Downloads/mandelbrot/controlhorizontal.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity controlhorizontal
+# -- Compiling architecture oneHot of controlhorizontal
+vcom -reportprogress 30 -work work C:/Users/Usuario/Downloads/mandelbrot/controlvertical.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity controlvertical
+# -- Compiling architecture oneHot of controlvertical
+vcom -reportprogress 30 -work work C:/Users/Usuario/Downloads/mandelbrot/contS.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity contS
+# -- Compiling architecture contArchi of contS
+vcom -reportprogress 30 -work work C:/Users/Usuario/Downloads/mandelbrot/contv.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity contv
+# -- Compiling architecture contvArch of contv
+vcom -reportprogress 30 -work work C:/Users/Usuario/Downloads/mandelbrot/Escape.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# ** Error: (vcom-11) Could not find work.my_package.
+# 
+# ** Error: C:/Users/Usuario/Downloads/mandelbrot/Escape.vhd(4): (vcom-1195) Cannot find expanded name "work.my_package".
+# 
+# ** Error: C:/Users/Usuario/Downloads/mandelbrot/Escape.vhd(4): Unknown expanded name.
+# ** Error: C:/Users/Usuario/Downloads/mandelbrot/Escape.vhd(6): VHDL Compiler exiting
+vcom -reportprogress 30 -work work C:/Users/Usuario/Downloads/mandelbrot/horizontal.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity horizontal
+# -- Compiling architecture ARCH of horizontal
+# -- Loading entity controlhorizontal
+# -- Loading package NUMERIC_STD
+# -- Loading entity cont
+# -- Loading entity conth
+vcom -reportprogress 30 -work work C:/Users/Usuario/Downloads/mandelbrot/mandelbrot.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mandelbrot
+# -- Compiling architecture mandelbrotARCH of mandelbrot
+# -- Loading entity controlDibujo
+# -- Loading entity horizontal
+# ** Error: (vcom-11) Could not find work.vertical.
+# 
+# ** Error: C:/Users/Usuario/Downloads/mandelbrot/mandelbrot.vhd(85): (vcom-1195) Cannot find expanded name "work.vertical".
+# 
+# ** Error: C:/Users/Usuario/Downloads/mandelbrot/mandelbrot.vhd(85): Unknown expanded name.
+# ** Error: C:/Users/Usuario/Downloads/mandelbrot/mandelbrot.vhd(104): VHDL Compiler exiting
+vcom -reportprogress 30 -work work C:/Users/Usuario/Downloads/mandelbrot/mandelbrot_tb.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# ** Error: (vcom-11) Could not find work.my_package.
+# 
+# ** Error: C:/Users/Usuario/Downloads/mandelbrot/mandelbrot_tb.vhd(4): (vcom-1195) Cannot find expanded name "work.my_package".
+# 
+# ** Error: C:/Users/Usuario/Downloads/mandelbrot/mandelbrot_tb.vhd(4): Unknown expanded name.
+# ** Error: C:/Users/Usuario/Downloads/mandelbrot/mandelbrot_tb.vhd(6): VHDL Compiler exiting
+vcom -reportprogress 30 -work work C:/Users/Usuario/Downloads/mandelbrot/Matriz.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Matriz
+# -- Compiling architecture calculador of Matriz
+vcom -reportprogress 30 -work work C:/Users/Usuario/Downloads/mandelbrot/my_package.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package my_package
+# -- Compiling package body my_package
+# -- Loading package my_package
+vcom -reportprogress 30 -work work C:/Users/Usuario/Downloads/mandelbrot/Operacion.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package my_package
+# -- Compiling entity Operacion
+# -- Compiling architecture Op of Operacion
+vcom -reportprogress 30 -work work C:/Users/Usuario/Downloads/mandelbrot/proof.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package my_package
+# -- Compiling entity proof
+# -- Compiling architecture Op of proof
+# ** Error: (vcom-11) Could not find work.register_file.
+# 
+# ** Error: C:/Users/Usuario/Downloads/mandelbrot/proof.vhd(110): (vcom-1195) Cannot find expanded name "work.register_file".
+# 
+# ** Error: C:/Users/Usuario/Downloads/mandelbrot/proof.vhd(110): Unknown expanded name.
+# ** Error: (vcom-11) Could not find work.register_file.
+# 
+# ** Error: C:/Users/Usuario/Downloads/mandelbrot/proof.vhd(121): (vcom-1195) Cannot find expanded name "work.register_file".
+# 
+# ** Error: C:/Users/Usuario/Downloads/mandelbrot/proof.vhd(121): Unknown expanded name.
+# ** Error: (vcom-11) Could not find work.register_color.
+# 
+# ** Error: C:/Users/Usuario/Downloads/mandelbrot/proof.vhd(132): (vcom-1195) Cannot find expanded name "work.register_color".
+# 
+# ** Error: C:/Users/Usuario/Downloads/mandelbrot/proof.vhd(132): Unknown expanded name.
+# ** Error: (vcom-11) Could not find work.register_c.
+# 
+# ** Error: C:/Users/Usuario/Downloads/mandelbrot/proof.vhd(141): (vcom-1195) Cannot find expanded name "work.register_c".
+# 
+# ** Error: C:/Users/Usuario/Downloads/mandelbrot/proof.vhd(141): Unknown expanded name.
+# ** Error: (vcom-11) Could not find work.register_c.
+# 
+# ** Error: C:/Users/Usuario/Downloads/mandelbrot/proof.vhd(151): (vcom-1195) Cannot find expanded name "work.register_c".
+# 
+# ** Error: C:/Users/Usuario/Downloads/mandelbrot/proof.vhd(151): Unknown expanded name.
+# -- Loading entity Operacion
+# ** Error: (vcom-11) Could not find work.escape.
+# 
+# ** Error: C:/Users/Usuario/Downloads/mandelbrot/proof.vhd(174): (vcom-1195) Cannot find expanded name "work.Escape".
+# 
+# ** Error: C:/Users/Usuario/Downloads/mandelbrot/proof.vhd(174): Unknown expanded name.
+# ** Error: (vcom-11) Could not find work.ram.
+# 
+# ** Error: C:/Users/Usuario/Downloads/mandelbrot/proof.vhd(184): (vcom-1195) Cannot find expanded name "work.RAM".
+# 
+# ** Error: C:/Users/Usuario/Downloads/mandelbrot/proof.vhd(184): Unknown expanded name.
+# -- Loading entity contm
+# ** Error: (vcom-11) Could not find work.suma.
+# 
+# ** Error: C:/Users/Usuario/Downloads/mandelbrot/proof.vhd(226): (vcom-1195) Cannot find expanded name "work.Suma".
+# 
+# ** Error: C:/Users/Usuario/Downloads/mandelbrot/proof.vhd(226): Unknown expanded name.
+# -- Loading entity controlFractal
+# ** Error: C:/Users/Usuario/Downloads/mandelbrot/proof.vhd(278): VHDL Compiler exiting
+vcom -reportprogress 30 -work work C:/Users/Usuario/Downloads/mandelbrot/proof_tb.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package my_package
+# -- Compiling entity proof_tb
+# -- Compiling architecture testbench2 of proof_tb
+# -- Loading entity proof
+vcom -reportprogress 30 -work work C:/Users/Usuario/Downloads/mandelbrot/RAM.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity RAM
+# -- Compiling architecture behavioral of RAM
+vcom -reportprogress 30 -work work C:/Users/Usuario/Downloads/mandelbrot/register_c.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity register_c
+# -- Compiling architecture register_c_arch of register_c
+vcom -reportprogress 30 -work work C:/Users/Usuario/Downloads/mandelbrot/register_color.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity register_color
+# -- Compiling architecture register_color_arch of register_color
+vcom -reportprogress 30 -work work C:/Users/Usuario/Downloads/mandelbrot/register_file.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity register_file
+# -- Compiling architecture rtl of register_file
+vcom -reportprogress 30 -work work C:/Users/Usuario/Downloads/mandelbrot/Suma.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package my_package
+# -- Compiling entity Suma
+# -- Compiling architecture Opeope of Suma
+vcom -reportprogress 30 -work work C:/Users/Usuario/Downloads/mandelbrot/vertical.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity vertical
+# -- Compiling architecture ARCH of vertical
+# -- Loading entity controlvertical
+# -- Loading package NUMERIC_STD
+# -- Loading entity cont
+# -- Loading entity contv
+vcom -reportprogress 300 -work work C:/Users/Usuario/Downloads/mandelbrot/Suma.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package my_package
+# -- Compiling entity Suma
+# -- Compiling architecture Opeope of Suma
+vcom -reportprogress 300 -work work C:/Users/Usuario/Downloads/mandelbrot/RAM.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity RAM
+# -- Compiling architecture behavioral of RAM
+vcom -reportprogress 300 -work work C:/Users/Usuario/Downloads/mandelbrot/register_c.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity register_c
+# -- Compiling architecture register_c_arch of register_c
+vcom -reportprogress 300 -work work C:/Users/Usuario/Downloads/mandelbrot/register_color.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity register_color
+# -- Compiling architecture register_color_arch of register_color
+vcom -reportprogress 300 -work work C:/Users/Usuario/Downloads/mandelbrot/Escape.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package my_package
+# -- Compiling entity Escape
+# -- Compiling architecture Op of Escape
+vcom -reportprogress 300 -work work C:/Users/Usuario/Downloads/mandelbrot/cont.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity cont
+# -- Compiling architecture contArchh of cont
+vcom -reportprogress 300 -work work C:/Users/Usuario/Downloads/mandelbrot/conth.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity conth
+# -- Compiling architecture conthArch of conth
+vcom -reportprogress 300 -work work C:/Users/Usuario/Downloads/mandelbrot/contm.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity contm
+# -- Compiling architecture contmArch of contm
+vcom -reportprogress 300 -work work C:/Users/Usuario/Downloads/mandelbrot/ControlBarraL.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ControlBarraL
+# -- Compiling architecture bar of ControlBarraL
+vcom -reportprogress 300 -work work C:/Users/Usuario/Downloads/mandelbrot/ControlBarraR.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ControlBarraR
+# -- Compiling architecture bar of ControlBarraR
+vcom -reportprogress 300 -work work C:/Users/Usuario/Downloads/mandelbrot/ControlBolita.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ControlBolita
+# -- Compiling architecture bola of ControlBolita
+vcom -reportprogress 300 -work work C:/Users/Usuario/Downloads/mandelbrot/controlDibujo.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity controlDibujo
+# -- Compiling architecture controlDibujoARCH of controlDibujo
+# -- Loading package my_package
+# -- Loading entity proof
+# -- Loading entity conth
+vcom -reportprogress 300 -work work C:/Users/Usuario/Downloads/mandelbrot/controlFractal.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity controlFractal
+# -- Compiling architecture controlFractalARCH of controlFractal
+vcom -reportprogress 30 -work work C:/Users/Usuario/Downloads/mandelbrot/controlhorizontal.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity controlhorizontal
+# -- Compiling architecture oneHot of controlhorizontal
+vcom -reportprogress 30 -work work C:/Users/Usuario/Downloads/mandelbrot/controlvertical.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity controlvertical
+# -- Compiling architecture oneHot of controlvertical
+vcom -reportprogress 30 -work work C:/Users/Usuario/Downloads/mandelbrot/contS.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity contS
+# -- Compiling architecture contArchi of contS
+vcom -reportprogress 30 -work work C:/Users/Usuario/Downloads/mandelbrot/contv.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity contv
+# -- Compiling architecture contvArch of contv
+vcom -reportprogress 30 -work work C:/Users/Usuario/Downloads/mandelbrot/Escape.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package my_package
+# -- Compiling entity Escape
+# -- Compiling architecture Op of Escape
+vcom -reportprogress 30 -work work C:/Users/Usuario/Downloads/mandelbrot/horizontal.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity horizontal
+# -- Compiling architecture ARCH of horizontal
+# -- Loading entity controlhorizontal
+# -- Loading package NUMERIC_STD
+# -- Loading entity cont
+# -- Loading entity conth
+vcom -reportprogress 30 -work work C:/Users/Usuario/Downloads/mandelbrot/mandelbrot.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mandelbrot
+# -- Compiling architecture mandelbrotARCH of mandelbrot
+# -- Loading entity controlDibujo
+# -- Loading entity horizontal
+# -- Loading entity vertical
+vcom -reportprogress 30 -work work C:/Users/Usuario/Downloads/mandelbrot/mandelbrot_tb.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package my_package
+# -- Compiling entity mandelbrot_tb
+# -- Compiling architecture testbench2 of mandelbrot_tb
+# -- Loading entity mandelbrot
+vcom -reportprogress 30 -work work C:/Users/Usuario/Downloads/mandelbrot/Matriz.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Matriz
+# -- Compiling architecture calculador of Matriz
+vcom -reportprogress 30 -work work C:/Users/Usuario/Downloads/mandelbrot/my_package.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package my_package
+# -- Compiling package body my_package
+# -- Loading package my_package
+vcom -reportprogress 30 -work work C:/Users/Usuario/Downloads/mandelbrot/Operacion.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package my_package
+# -- Compiling entity Operacion
+# -- Compiling architecture Op of Operacion
+vcom -reportprogress 30 -work work C:/Users/Usuario/Downloads/mandelbrot/proof.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package my_package
+# -- Compiling entity proof
+# -- Compiling architecture Op of proof
+# -- Loading entity register_file
+# -- Loading entity register_color
+# -- Loading entity register_c
+# -- Loading entity Operacion
+# -- Loading entity Escape
+# -- Loading entity RAM
+# -- Loading entity contm
+# -- Loading entity Suma
+# -- Loading entity controlFractal
+vcom -reportprogress 30 -work work C:/Users/Usuario/Downloads/mandelbrot/proof_tb.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package my_package
+# -- Compiling entity proof_tb
+# -- Compiling architecture testbench2 of proof_tb
+# -- Loading entity proof
+vcom -reportprogress 30 -work work C:/Users/Usuario/Downloads/mandelbrot/RAM.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity RAM
+# -- Compiling architecture behavioral of RAM
+vcom -reportprogress 30 -work work C:/Users/Usuario/Downloads/mandelbrot/register_c.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity register_c
+# -- Compiling architecture register_c_arch of register_c
+vcom -reportprogress 30 -work work C:/Users/Usuario/Downloads/mandelbrot/register_color.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity register_color
+# -- Compiling architecture register_color_arch of register_color
+vcom -reportprogress 30 -work work C:/Users/Usuario/Downloads/mandelbrot/register_file.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity register_file
+# -- Compiling architecture rtl of register_file
+vcom -reportprogress 30 -work work C:/Users/Usuario/Downloads/mandelbrot/Suma.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package my_package
+# -- Compiling entity Suma
+# -- Compiling architecture Opeope of Suma
+vcom -reportprogress 30 -work work C:/Users/Usuario/Downloads/mandelbrot/vertical.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity vertical
+# -- Compiling architecture ARCH of vertical
+# -- Loading entity controlvertical
+# -- Loading package NUMERIC_STD
+# -- Loading entity cont
+# -- Loading entity contv
+vsim work.mandelbrot_tb
+# vsim work.mandelbrot_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.my_package(body)
+# Loading work.mandelbrot_tb(testbench2)
+# Loading work.mandelbrot(mandelbrotarch)
+# Loading work.controldibujo(controldibujoarch)
+# Loading work.proof(op)
+# Loading work.register_file(rtl)
+# Loading work.register_color(register_color_arch)
+# Loading work.register_c(register_c_arch)
+# Loading work.operacion(op)
+# Loading work.escape(op)
+# Loading work.ram(behavioral)
+# Loading work.contm(contmarch)
+# Loading work.suma(opeope)
+# Loading work.controlfractal(controlfractalarch)
+# Loading work.conth(contharch)
+# Loading work.horizontal(arch)
+# Loading work.controlhorizontal(onehot)
+# Loading work.cont(contarchh)
+# Loading work.vertical(arch)
+# Loading work.controlvertical(onehot)
+# Loading work.contv(contvarch)
+add wave -position insertpoint  \
+sim:/mandelbrot_tb/pixel
+add wave -position insertpoint  \
+sim:/mandelbrot_tb/h_video_on_out \
+sim:/mandelbrot_tb/v_video_on_out
+add wave -position insertpoint  \
+sim:/mandelbrot_tb/proofBLK_tb/controlDibujoBLK/PosicionColumna \
+sim:/mandelbrot_tb/proofBLK_tb/controlDibujoBLK/PosicionFila
+run 100 us
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 0 ps  Iteration: 0  Instance: /mandelbrot_tb/proofBLK_tb/verticalBLK/BISTV
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 0 ps  Iteration: 0  Instance: /mandelbrot_tb/proofBLK_tb/horizontalBLK/BISTH
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 0 ps  Iteration: 0  Instance: /mandelbrot_tb/proofBLK_tb/controlDibujoBLK/COLUMNAS
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /mandelbrot_tb/proofBLK_tb/controlDibujoBLK/Matriz/Ynnm
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /mandelbrot_tb/proofBLK_tb/controlDibujoBLK/Matriz/Xnnm
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /mandelbrot_tb/proofBLK_tb/controlDibujoBLK
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /mandelbrot_tb/proofBLK_tb/controlDibujoBLK
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /mandelbrot_tb/proofBLK_tb/controlDibujoBLK/Matriz/Ynnm
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /mandelbrot_tb/proofBLK_tb/controlDibujoBLK/Matriz/Xnnm
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 0 ps  Iteration: 1  Instance: /mandelbrot_tb/proofBLK_tb/controlDibujoBLK/COLUMNAS
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 0 ps  Iteration: 1  Instance: /mandelbrot_tb/proofBLK_tb/horizontalBLK/BISTH
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 0 ps  Iteration: 3  Instance: /mandelbrot_tb/proofBLK_tb/verticalBLK/BISTV
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 10 ns  Iteration: 0  Instance: /mandelbrot_tb/proofBLK_tb/controlDibujoBLK/COLUMNAS
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 10 ns  Iteration: 0  Instance: /mandelbrot_tb/proofBLK_tb/horizontalBLK/BISTH
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 10 ns  Iteration: 0  Instance: /mandelbrot_tb/proofBLK_tb/verticalBLK/BISTV
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 10 ns  Iteration: 1  Instance: /mandelbrot_tb/proofBLK_tb/controlDibujoBLK/COLUMNAS
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 20 ns  Iteration: 1  Instance: /mandelbrot_tb/proofBLK_tb/controlDibujoBLK/COLUMNAS
+add wave -position insertpoint  \
+sim:/mandelbrot_tb/proofBLK_tb/clk
+restart -f
+1 ms
+# invalid command name "1"
+run 1ms
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 0 ps  Iteration: 0  Instance: /mandelbrot_tb/proofBLK_tb/verticalBLK/BISTV
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 0 ps  Iteration: 0  Instance: /mandelbrot_tb/proofBLK_tb/horizontalBLK/BISTH
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 0 ps  Iteration: 0  Instance: /mandelbrot_tb/proofBLK_tb/controlDibujoBLK/COLUMNAS
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /mandelbrot_tb/proofBLK_tb/controlDibujoBLK/Matriz/Ynnm
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /mandelbrot_tb/proofBLK_tb/controlDibujoBLK/Matriz/Xnnm
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /mandelbrot_tb/proofBLK_tb/controlDibujoBLK
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /mandelbrot_tb/proofBLK_tb/controlDibujoBLK
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /mandelbrot_tb/proofBLK_tb/controlDibujoBLK/Matriz/Ynnm
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /mandelbrot_tb/proofBLK_tb/controlDibujoBLK/Matriz/Xnnm
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 0 ps  Iteration: 1  Instance: /mandelbrot_tb/proofBLK_tb/controlDibujoBLK/COLUMNAS
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 0 ps  Iteration: 1  Instance: /mandelbrot_tb/proofBLK_tb/horizontalBLK/BISTH
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 0 ps  Iteration: 3  Instance: /mandelbrot_tb/proofBLK_tb/verticalBLK/BISTV
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 10 ns  Iteration: 0  Instance: /mandelbrot_tb/proofBLK_tb/controlDibujoBLK/COLUMNAS
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 10 ns  Iteration: 0  Instance: /mandelbrot_tb/proofBLK_tb/horizontalBLK/BISTH
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 10 ns  Iteration: 0  Instance: /mandelbrot_tb/proofBLK_tb/verticalBLK/BISTV
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 10 ns  Iteration: 1  Instance: /mandelbrot_tb/proofBLK_tb/controlDibujoBLK/COLUMNAS
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 20 ns  Iteration: 1  Instance: /mandelbrot_tb/proofBLK_tb/controlDibujoBLK/COLUMNAS
+add wave -position insertpoint  \
+sim:/mandelbrot_tb/proofBLK_tb/controlDibujoBLK/Matriz/MemoriaRAM/mem
+restart -f
+run 10 ms
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 0 ps  Iteration: 0  Instance: /mandelbrot_tb/proofBLK_tb/verticalBLK/BISTV
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 0 ps  Iteration: 0  Instance: /mandelbrot_tb/proofBLK_tb/horizontalBLK/BISTH
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 0 ps  Iteration: 0  Instance: /mandelbrot_tb/proofBLK_tb/controlDibujoBLK/COLUMNAS
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /mandelbrot_tb/proofBLK_tb/controlDibujoBLK/Matriz/Ynnm
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /mandelbrot_tb/proofBLK_tb/controlDibujoBLK/Matriz/Xnnm
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /mandelbrot_tb/proofBLK_tb/controlDibujoBLK
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /mandelbrot_tb/proofBLK_tb/controlDibujoBLK
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /mandelbrot_tb/proofBLK_tb/controlDibujoBLK/Matriz/Ynnm
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /mandelbrot_tb/proofBLK_tb/controlDibujoBLK/Matriz/Xnnm
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 0 ps  Iteration: 1  Instance: /mandelbrot_tb/proofBLK_tb/controlDibujoBLK/COLUMNAS
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 0 ps  Iteration: 1  Instance: /mandelbrot_tb/proofBLK_tb/horizontalBLK/BISTH
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 0 ps  Iteration: 3  Instance: /mandelbrot_tb/proofBLK_tb/verticalBLK/BISTV
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 10 ns  Iteration: 0  Instance: /mandelbrot_tb/proofBLK_tb/controlDibujoBLK/COLUMNAS
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 10 ns  Iteration: 0  Instance: /mandelbrot_tb/proofBLK_tb/horizontalBLK/BISTH
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 10 ns  Iteration: 0  Instance: /mandelbrot_tb/proofBLK_tb/verticalBLK/BISTV
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 10 ns  Iteration: 1  Instance: /mandelbrot_tb/proofBLK_tb/controlDibujoBLK/COLUMNAS
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 20 ns  Iteration: 1  Instance: /mandelbrot_tb/proofBLK_tb/controlDibujoBLK/COLUMNAS
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/cont.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity cont
+# -- Compiling architecture contArchh of cont
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/conth.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity conth
+# -- Compiling architecture conthArch of conth
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/contm.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity contm
+# -- Compiling architecture contmArch of contm
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/ControlBarraL.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ControlBarraL
+# -- Compiling architecture bar of ControlBarraL
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/ControlBarraR.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ControlBarraR
+# -- Compiling architecture bar of ControlBarraR
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/ControlBolita.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ControlBolita
+# -- Compiling architecture bola of ControlBolita
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/controlDibujo.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity controlDibujo
+# -- Compiling architecture controlDibujoARCH of controlDibujo
+# -- Loading package my_package
+# -- Loading entity proof
+# -- Loading entity conth
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/controlFractal.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity controlFractal
+# -- Compiling architecture controlFractalARCH of controlFractal
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/controlhorizontal.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity controlhorizontal
+# -- Compiling architecture oneHot of controlhorizontal
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/controlvertical.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity controlvertical
+# -- Compiling architecture oneHot of controlvertical
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/contS.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity contS
+# -- Compiling architecture contArchi of contS
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/contv.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity contv
+# -- Compiling architecture contvArch of contv
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/Escape.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package my_package
+# -- Compiling entity Escape
+# -- Compiling architecture Op of Escape
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/horizontal.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity horizontal
+# -- Compiling architecture ARCH of horizontal
+# -- Loading entity controlhorizontal
+# -- Loading package NUMERIC_STD
+# -- Loading entity cont
+# -- Loading entity conth
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/mandelbrot.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mandelbrot
+# -- Compiling architecture mandelbrotARCH of mandelbrot
+# -- Loading entity controlDibujo
+# -- Loading entity horizontal
+# -- Loading entity vertical
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/mandelbrot_tb.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package my_package
+# -- Compiling entity mandelbrot_tb
+# -- Compiling architecture testbench2 of mandelbrot_tb
+# -- Loading entity mandelbrot
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/Matriz.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Matriz
+# -- Compiling architecture calculador of Matriz
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/my_package.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package my_package
+# -- Compiling package body my_package
+# -- Loading package my_package
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/Operacion.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package my_package
+# -- Compiling entity Operacion
+# -- Compiling architecture Op of Operacion
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/proof.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package my_package
+# -- Compiling entity proof
+# -- Compiling architecture Op of proof
+# -- Loading entity register_file
+# -- Loading entity register_color
+# -- Loading entity register_c
+# -- Loading entity Operacion
+# -- Loading entity Escape
+# -- Loading entity RAM
+# -- Loading entity contm
+# -- Loading entity Suma
+# -- Loading entity controlFractal
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/proof_tb.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package my_package
+# -- Compiling entity proof_tb
+# -- Compiling architecture testbench2 of proof_tb
+# -- Loading entity proof
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/RAM.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity RAM
+# -- Compiling architecture behavioral of RAM
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/register_c.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity register_c
+# -- Compiling architecture register_c_arch of register_c
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/register_color.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity register_color
+# -- Compiling architecture register_color_arch of register_color
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/register_file.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity register_file
+# -- Compiling architecture rtl of register_file
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/Suma.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package my_package
+# -- Compiling entity Suma
+# -- Compiling architecture Opeope of Suma
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/vertical.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity vertical
+# -- Compiling architecture ARCH of vertical
+# -- Loading entity controlvertical
+# -- Loading package NUMERIC_STD
+# -- Loading entity cont
+# -- Loading entity contv
+restart -f
+# Loading work.my_package(body)
+# Loading work.mandelbrot_tb(testbench2)
+# Loading work.mandelbrot(mandelbrotarch)
+# Loading work.controldibujo(controldibujoarch)
+# Loading work.proof(op)
+# Loading work.register_file(rtl)
+# Loading work.register_color(register_color_arch)
+# Loading work.register_c(register_c_arch)
+# Loading work.operacion(op)
+# Loading work.escape(op)
+# Loading work.ram(behavioral)
+# Loading work.contm(contmarch)
+# Loading work.suma(opeope)
+# Loading work.controlfractal(controlfractalarch)
+# Loading work.conth(contharch)
+# Loading work.horizontal(arch)
+# Loading work.controlhorizontal(onehot)
+# Loading work.cont(contarchh)
+# Loading work.vertical(arch)
+# Loading work.controlvertical(onehot)
+# Loading work.contv(contvarch)
+run 10 ms
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 0 ps  Iteration: 0  Instance: /mandelbrot_tb/proofBLK_tb/verticalBLK/BISTV
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 0 ps  Iteration: 0  Instance: /mandelbrot_tb/proofBLK_tb/horizontalBLK/BISTH
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 0 ps  Iteration: 0  Instance: /mandelbrot_tb/proofBLK_tb/controlDibujoBLK/COLUMNAS
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /mandelbrot_tb/proofBLK_tb/controlDibujoBLK/Matriz/Ynnm
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /mandelbrot_tb/proofBLK_tb/controlDibujoBLK/Matriz/Xnnm
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /mandelbrot_tb/proofBLK_tb/controlDibujoBLK
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /mandelbrot_tb/proofBLK_tb/controlDibujoBLK
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /mandelbrot_tb/proofBLK_tb/controlDibujoBLK/Matriz/Ynnm
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /mandelbrot_tb/proofBLK_tb/controlDibujoBLK/Matriz/Xnnm
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 0 ps  Iteration: 1  Instance: /mandelbrot_tb/proofBLK_tb/controlDibujoBLK/COLUMNAS
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 0 ps  Iteration: 1  Instance: /mandelbrot_tb/proofBLK_tb/horizontalBLK/BISTH
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 0 ps  Iteration: 3  Instance: /mandelbrot_tb/proofBLK_tb/verticalBLK/BISTV
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 10 ns  Iteration: 0  Instance: /mandelbrot_tb/proofBLK_tb/controlDibujoBLK/COLUMNAS
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 10 ns  Iteration: 0  Instance: /mandelbrot_tb/proofBLK_tb/horizontalBLK/BISTH
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 10 ns  Iteration: 0  Instance: /mandelbrot_tb/proofBLK_tb/verticalBLK/BISTV
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 10 ns  Iteration: 1  Instance: /mandelbrot_tb/proofBLK_tb/controlDibujoBLK/COLUMNAS
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 20 ns  Iteration: 1  Instance: /mandelbrot_tb/proofBLK_tb/controlDibujoBLK/COLUMNAS
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/cont.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity cont
+# -- Compiling architecture contArchh of cont
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/conth.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity conth
+# -- Compiling architecture conthArch of conth
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/contm.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity contm
+# -- Compiling architecture contmArch of contm
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/ControlBarraL.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ControlBarraL
+# -- Compiling architecture bar of ControlBarraL
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/ControlBarraR.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ControlBarraR
+# -- Compiling architecture bar of ControlBarraR
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/ControlBolita.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ControlBolita
+# -- Compiling architecture bola of ControlBolita
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/controlDibujo.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity controlDibujo
+# -- Compiling architecture controlDibujoARCH of controlDibujo
+# -- Loading entity Matriz
+# -- Loading entity conth
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/controlFractal.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity controlFractal
+# -- Compiling architecture controlFractalARCH of controlFractal
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/controlhorizontal.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity controlhorizontal
+# -- Compiling architecture oneHot of controlhorizontal
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/controlvertical.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity controlvertical
+# -- Compiling architecture oneHot of controlvertical
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/contS.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity contS
+# -- Compiling architecture contArchi of contS
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/contv.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity contv
+# -- Compiling architecture contvArch of contv
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/Escape.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package my_package
+# -- Compiling entity Escape
+# -- Compiling architecture Op of Escape
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/horizontal.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity horizontal
+# -- Compiling architecture ARCH of horizontal
+# -- Loading entity controlhorizontal
+# -- Loading package NUMERIC_STD
+# -- Loading entity cont
+# -- Loading entity conth
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/mandelbrot.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mandelbrot
+# -- Compiling architecture mandelbrotARCH of mandelbrot
+# -- Loading entity controlDibujo
+# -- Loading entity horizontal
+# -- Loading entity vertical
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/mandelbrot_tb.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package my_package
+# -- Compiling entity mandelbrot_tb
+# -- Compiling architecture testbench2 of mandelbrot_tb
+# -- Loading entity mandelbrot
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/Matriz.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Matriz
+# -- Compiling architecture calculador of Matriz
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/my_package.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package my_package
+# -- Compiling package body my_package
+# -- Loading package my_package
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/Operacion.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package my_package
+# -- Compiling entity Operacion
+# -- Compiling architecture Op of Operacion
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/proof.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package my_package
+# -- Compiling entity proof
+# -- Compiling architecture Op of proof
+# -- Loading entity register_file
+# -- Loading entity register_color
+# -- Loading entity register_c
+# -- Loading entity Operacion
+# -- Loading entity Escape
+# -- Loading entity RAM
+# -- Loading entity contm
+# -- Loading entity Suma
+# -- Loading entity controlFractal
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/proof_tb.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package my_package
+# -- Compiling entity proof_tb
+# -- Compiling architecture testbench2 of proof_tb
+# -- Loading entity proof
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/RAM.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity RAM
+# -- Compiling architecture behavioral of RAM
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/register_c.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity register_c
+# -- Compiling architecture register_c_arch of register_c
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/register_color.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity register_color
+# -- Compiling architecture register_color_arch of register_color
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/register_file.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity register_file
+# -- Compiling architecture rtl of register_file
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/Suma.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package my_package
+# -- Compiling entity Suma
+# -- Compiling architecture Opeope of Suma
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/vertical.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity vertical
+# -- Compiling architecture ARCH of vertical
+# -- Loading entity controlvertical
+# -- Loading package NUMERIC_STD
+# -- Loading entity cont
+# -- Loading entity contv
+restart -f
+# Loading work.my_package(body)
+# Loading work.mandelbrot_tb(testbench2)
+# Loading work.mandelbrot(mandelbrotarch)
+# Loading work.controldibujo(controldibujoarch)
+# Loading work.matriz(calculador)
+# Loading work.conth(contharch)
+# Loading work.horizontal(arch)
+# Loading work.controlhorizontal(onehot)
+# Loading work.cont(contarchh)
+# Loading work.vertical(arch)
+# Loading work.controlvertical(onehot)
+# Loading work.contv(contvarch)
+# Warning in wave window restart: (vish-4014) No objects found matching '/mandelbrot_tb/proofBLK_tb/controlDibujoBLK/Matriz/MemoriaRAM/mem'. 
+run 10 ms
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 0 ps  Iteration: 0  Instance: /mandelbrot_tb/proofBLK_tb/verticalBLK/BISTV
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 0 ps  Iteration: 0  Instance: /mandelbrot_tb/proofBLK_tb/horizontalBLK/BISTH
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 0 ps  Iteration: 0  Instance: /mandelbrot_tb/proofBLK_tb/controlDibujoBLK/COLUMNAS
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /mandelbrot_tb/proofBLK_tb/controlDibujoBLK
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /mandelbrot_tb/proofBLK_tb/controlDibujoBLK
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 0 ps  Iteration: 1  Instance: /mandelbrot_tb/proofBLK_tb/controlDibujoBLK/COLUMNAS
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 0 ps  Iteration: 1  Instance: /mandelbrot_tb/proofBLK_tb/horizontalBLK/BISTH
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 0 ps  Iteration: 3  Instance: /mandelbrot_tb/proofBLK_tb/verticalBLK/BISTV
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 10 ns  Iteration: 0  Instance: /mandelbrot_tb/proofBLK_tb/controlDibujoBLK/COLUMNAS
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 10 ns  Iteration: 0  Instance: /mandelbrot_tb/proofBLK_tb/horizontalBLK/BISTH
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 10 ns  Iteration: 0  Instance: /mandelbrot_tb/proofBLK_tb/verticalBLK/BISTV
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 10 ns  Iteration: 1  Instance: /mandelbrot_tb/proofBLK_tb/controlDibujoBLK/COLUMNAS
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 20 ns  Iteration: 1  Instance: /mandelbrot_tb/proofBLK_tb/controlDibujoBLK/COLUMNAS
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/cont.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity cont
+# -- Compiling architecture contArchh of cont
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/conth.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity conth
+# -- Compiling architecture conthArch of conth
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/contm.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity contm
+# -- Compiling architecture contmArch of contm
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/ControlBarraL.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ControlBarraL
+# -- Compiling architecture bar of ControlBarraL
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/ControlBarraR.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ControlBarraR
+# -- Compiling architecture bar of ControlBarraR
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/ControlBolita.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ControlBolita
+# -- Compiling architecture bola of ControlBolita
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/controlDibujo.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity controlDibujo
+# -- Compiling architecture controlDibujoARCH of controlDibujo
+# -- Loading entity Matriz
+# -- Loading entity conth
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/controlFractal.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity controlFractal
+# -- Compiling architecture controlFractalARCH of controlFractal
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/controlhorizontal.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity controlhorizontal
+# -- Compiling architecture oneHot of controlhorizontal
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/controlvertical.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity controlvertical
+# -- Compiling architecture oneHot of controlvertical
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/contS.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity contS
+# -- Compiling architecture contArchi of contS
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/contv.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity contv
+# -- Compiling architecture contvArch of contv
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/Escape.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package my_package
+# -- Compiling entity Escape
+# -- Compiling architecture Op of Escape
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/horizontal.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity horizontal
+# -- Compiling architecture ARCH of horizontal
+# -- Loading entity controlhorizontal
+# -- Loading package NUMERIC_STD
+# -- Loading entity cont
+# -- Loading entity conth
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/mandelbrot.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mandelbrot
+# -- Compiling architecture mandelbrotARCH of mandelbrot
+# -- Loading entity controlDibujo
+# -- Loading entity horizontal
+# -- Loading entity vertical
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/mandelbrot_tb.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package my_package
+# -- Compiling entity mandelbrot_tb
+# -- Compiling architecture testbench2 of mandelbrot_tb
+# -- Loading entity mandelbrot
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/Matriz.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Matriz
+# -- Compiling architecture calculador of Matriz
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/my_package.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package my_package
+# -- Compiling package body my_package
+# -- Loading package my_package
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/Operacion.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package my_package
+# -- Compiling entity Operacion
+# -- Compiling architecture Op of Operacion
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/proof.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package my_package
+# -- Compiling entity proof
+# -- Compiling architecture Op of proof
+# -- Loading entity register_file
+# -- Loading entity register_color
+# -- Loading entity register_c
+# -- Loading entity Operacion
+# -- Loading entity Escape
+# -- Loading entity RAM
+# -- Loading entity contm
+# -- Loading entity Suma
+# -- Loading entity controlFractal
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/proof_tb.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package my_package
+# -- Compiling entity proof_tb
+# -- Compiling architecture testbench2 of proof_tb
+# -- Loading entity proof
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/RAM.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity RAM
+# -- Compiling architecture behavioral of RAM
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/register_c.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity register_c
+# -- Compiling architecture register_c_arch of register_c
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/register_color.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity register_color
+# -- Compiling architecture register_color_arch of register_color
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/register_file.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity register_file
+# -- Compiling architecture rtl of register_file
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/Suma.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package my_package
+# -- Compiling entity Suma
+# -- Compiling architecture Opeope of Suma
+vcom -work work -O0 C:/Users/Usuario/Downloads/mandelbrot/vertical.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity vertical
+# -- Compiling architecture ARCH of vertical
+# -- Loading entity controlvertical
+# -- Loading package NUMERIC_STD
+# -- Loading entity cont
+# -- Loading entity contv
+restart -f
+# Loading work.my_package(body)
+# Loading work.mandelbrot_tb(testbench2)
+# Loading work.mandelbrot(mandelbrotarch)
+# Loading work.controldibujo(controldibujoarch)
+# Loading work.matriz(calculador)
+# Loading work.conth(contharch)
+# Loading work.horizontal(arch)
+# Loading work.controlhorizontal(onehot)
+# Loading work.cont(contarchh)
+# Loading work.vertical(arch)
+# Loading work.controlvertical(onehot)
+# Loading work.contv(contvarch)
+run 10 ms
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 0 ps  Iteration: 0  Instance: /mandelbrot_tb/proofBLK_tb/verticalBLK/BISTV
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 0 ps  Iteration: 0  Instance: /mandelbrot_tb/proofBLK_tb/horizontalBLK/BISTH
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 0 ps  Iteration: 0  Instance: /mandelbrot_tb/proofBLK_tb/controlDibujoBLK/COLUMNAS
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /mandelbrot_tb/proofBLK_tb/controlDibujoBLK
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /mandelbrot_tb/proofBLK_tb/controlDibujoBLK
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 0 ps  Iteration: 1  Instance: /mandelbrot_tb/proofBLK_tb/controlDibujoBLK/COLUMNAS
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 0 ps  Iteration: 1  Instance: /mandelbrot_tb/proofBLK_tb/horizontalBLK/BISTH
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 0 ps  Iteration: 3  Instance: /mandelbrot_tb/proofBLK_tb/verticalBLK/BISTV
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 10 ns  Iteration: 0  Instance: /mandelbrot_tb/proofBLK_tb/controlDibujoBLK/COLUMNAS
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 10 ns  Iteration: 0  Instance: /mandelbrot_tb/proofBLK_tb/horizontalBLK/BISTH
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 10 ns  Iteration: 0  Instance: /mandelbrot_tb/proofBLK_tb/verticalBLK/BISTV
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 10 ns  Iteration: 1  Instance: /mandelbrot_tb/proofBLK_tb/controlDibujoBLK/COLUMNAS
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 20 ns  Iteration: 1  Instance: /mandelbrot_tb/proofBLK_tb/controlDibujoBLK/COLUMNAS

@@ -1,0 +1,862 @@
+Analysis & Synthesis report for mandelbrot
+Thu May 30 01:56:08 2019
+Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |mandelbrot|vertical:verticalBLK|controlvertical:DUT|pr_state
+  9. State Machine - |mandelbrot|horizontal:horizontalBLK|controlhorizontal:DUT|pr_state
+ 10. User-Specified and Inferred Latches
+ 11. General Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Parameter Settings for User Entity Instance: Top-level Entity: |mandelbrot
+ 14. Parameter Settings for User Entity Instance: controlDibujo:controlDibujoBLK
+ 15. Parameter Settings for User Entity Instance: controlDibujo:controlDibujoBLK|Matriz:Matriz
+ 16. Parameter Settings for User Entity Instance: controlDibujo:controlDibujoBLK|conth:COLUMNAS
+ 17. Parameter Settings for User Entity Instance: horizontal:horizontalBLK
+ 18. Parameter Settings for User Entity Instance: horizontal:horizontalBLK|cont:BIST
+ 19. Parameter Settings for User Entity Instance: horizontal:horizontalBLK|cont:BIST2
+ 20. Parameter Settings for User Entity Instance: horizontal:horizontalBLK|cont:BIST3
+ 21. Parameter Settings for User Entity Instance: horizontal:horizontalBLK|cont:BIST4
+ 22. Parameter Settings for User Entity Instance: horizontal:horizontalBLK|conth:BISTH
+ 23. Parameter Settings for User Entity Instance: vertical:verticalBLK
+ 24. Parameter Settings for User Entity Instance: vertical:verticalBLK|cont:BIST
+ 25. Parameter Settings for User Entity Instance: vertical:verticalBLK|cont:BIST2
+ 26. Parameter Settings for User Entity Instance: vertical:verticalBLK|cont:BIST3
+ 27. Parameter Settings for User Entity Instance: vertical:verticalBLK|cont:BIST4
+ 28. Parameter Settings for User Entity Instance: vertical:verticalBLK|contv:BISTV
+ 29. Port Connectivity Checks: "vertical:verticalBLK|contv:BISTV"
+ 30. Port Connectivity Checks: "vertical:verticalBLK"
+ 31. Port Connectivity Checks: "horizontal:horizontalBLK|conth:BISTH"
+ 32. Port Connectivity Checks: "horizontal:horizontalBLK"
+ 33. Port Connectivity Checks: "controlDibujo:controlDibujoBLK|conth:COLUMNAS"
+ 34. Port Connectivity Checks: "controlDibujo:controlDibujoBLK|Matriz:Matriz"
+ 35. Port Connectivity Checks: "controlDibujo:controlDibujoBLK"
+ 36. Elapsed Time Per Partition
+ 37. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Thu May 30 01:56:08 2019       ;
+; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Full Version ;
+; Revision Name                      ; mandelbrot                                  ;
+; Top-level Entity Name              ; mandelbrot                                  ;
+; Family                             ; Cyclone III                                 ;
+; Total logic elements               ; 213                                         ;
+;     Total combinational functions  ; 213                                         ;
+;     Dedicated logic registers      ; 92                                          ;
+; Total registers                    ; 92                                          ;
+; Total pins                         ; 23                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP3C16F484C6       ;                    ;
+; Top-level entity name                                                      ; mandelbrot         ; mandelbrot         ;
+; Family name                                                                ; Cyclone III        ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;   0.0%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                     ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                              ; Library ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------+---------+
+; vertical.vhd                     ; yes             ; User VHDL File  ; C:/Users/PAOLA/Downloads/mandelbrot/vertical.vhd          ;         ;
+; Matriz.vhd                       ; yes             ; User VHDL File  ; C:/Users/PAOLA/Downloads/mandelbrot/Matriz.vhd            ;         ;
+; mandelbrot.vhd                   ; yes             ; User VHDL File  ; C:/Users/PAOLA/Downloads/mandelbrot/mandelbrot.vhd        ;         ;
+; horizontal.vhd                   ; yes             ; User VHDL File  ; C:/Users/PAOLA/Downloads/mandelbrot/horizontal.vhd        ;         ;
+; contv.vhd                        ; yes             ; User VHDL File  ; C:/Users/PAOLA/Downloads/mandelbrot/contv.vhd             ;         ;
+; controlvertical.vhd              ; yes             ; User VHDL File  ; C:/Users/PAOLA/Downloads/mandelbrot/controlvertical.vhd   ;         ;
+; controlhorizontal.vhd            ; yes             ; User VHDL File  ; C:/Users/PAOLA/Downloads/mandelbrot/controlhorizontal.vhd ;         ;
+; controlDibujo.vhd                ; yes             ; User VHDL File  ; C:/Users/PAOLA/Downloads/mandelbrot/controlDibujo.vhd     ;         ;
+; conth.vhd                        ; yes             ; User VHDL File  ; C:/Users/PAOLA/Downloads/mandelbrot/conth.vhd             ;         ;
+; cont.vhd                         ; yes             ; User VHDL File  ; C:/Users/PAOLA/Downloads/mandelbrot/cont.vhd              ;         ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 213       ;
+;                                             ;           ;
+; Total combinational functions               ; 213       ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 39        ;
+;     -- 3 input functions                    ; 73        ;
+;     -- <=2 input functions                  ; 101       ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 142       ;
+;     -- arithmetic mode                      ; 71        ;
+;                                             ;           ;
+; Total registers                             ; 92        ;
+;     -- Dedicated logic registers            ; 92        ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 23        ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+; Maximum fan-out node                        ; rst~input ;
+; Maximum fan-out                             ; 92        ;
+; Total fan-out                               ; 903       ;
+; Average fan-out                             ; 2.57      ;
++---------------------------------------------+-----------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                         ;
++-------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node          ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                        ; Library Name ;
++-------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------+--------------+
+; |mandelbrot                         ; 213 (1)           ; 92 (0)       ; 0           ; 0            ; 0       ; 0         ; 23   ; 0            ; |mandelbrot                                                ;              ;
+;    |controlDibujo:controlDibujoBLK| ; 37 (13)           ; 11 (1)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mandelbrot|controlDibujo:controlDibujoBLK                 ;              ;
+;       |conth:COLUMNAS|              ; 24 (24)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mandelbrot|controlDibujo:controlDibujoBLK|conth:COLUMNAS  ;              ;
+;    |horizontal:horizontalBLK|       ; 116 (0)           ; 52 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mandelbrot|horizontal:horizontalBLK                       ;              ;
+;       |cont:BIST2|                  ; 28 (28)           ; 12 (12)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mandelbrot|horizontal:horizontalBLK|cont:BIST2            ;              ;
+;       |cont:BIST3|                  ; 16 (16)           ; 7 (7)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mandelbrot|horizontal:horizontalBLK|cont:BIST3            ;              ;
+;       |cont:BIST4|                  ; 21 (21)           ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mandelbrot|horizontal:horizontalBLK|cont:BIST4            ;              ;
+;       |cont:BIST|                   ; 19 (19)           ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mandelbrot|horizontal:horizontalBLK|cont:BIST             ;              ;
+;       |conth:BISTH|                 ; 28 (28)           ; 12 (12)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mandelbrot|horizontal:horizontalBLK|conth:BISTH           ;              ;
+;       |controlhorizontal:DUT|       ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mandelbrot|horizontal:horizontalBLK|controlhorizontal:DUT ;              ;
+;    |vertical:verticalBLK|           ; 59 (0)            ; 29 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mandelbrot|vertical:verticalBLK                           ;              ;
+;       |cont:BIST2|                  ; 23 (23)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mandelbrot|vertical:verticalBLK|cont:BIST2                ;              ;
+;       |cont:BIST3|                  ; 12 (12)           ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mandelbrot|vertical:verticalBLK|cont:BIST3                ;              ;
+;       |cont:BIST4|                  ; 3 (3)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mandelbrot|vertical:verticalBLK|cont:BIST4                ;              ;
+;       |cont:BIST|                   ; 16 (16)           ; 7 (7)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mandelbrot|vertical:verticalBLK|cont:BIST                 ;              ;
+;       |controlvertical:DUT|         ; 5 (5)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mandelbrot|vertical:verticalBLK|controlvertical:DUT       ;              ;
++-------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------+
+; State Machine - |mandelbrot|vertical:verticalBLK|controlvertical:DUT|pr_state   ;
++-----------------+-----------------+---------------+--------------+--------------+
+; Name            ; pr_state.cuatro ; pr_state.tres ; pr_state.dos ; pr_state.uno ;
++-----------------+-----------------+---------------+--------------+--------------+
+; pr_state.uno    ; 0               ; 0             ; 0            ; 0            ;
+; pr_state.dos    ; 0               ; 0             ; 1            ; 1            ;
+; pr_state.tres   ; 0               ; 1             ; 0            ; 1            ;
+; pr_state.cuatro ; 1               ; 0             ; 0            ; 1            ;
++-----------------+-----------------+---------------+--------------+--------------+
+
+
+Encoding Type:  One-Hot
++-------------------------------------------------------------------------------------+
+; State Machine - |mandelbrot|horizontal:horizontalBLK|controlhorizontal:DUT|pr_state ;
++-----------------+-----------------+---------------+--------------+------------------+
+; Name            ; pr_state.cuatro ; pr_state.tres ; pr_state.dos ; pr_state.uno     ;
++-----------------+-----------------+---------------+--------------+------------------+
+; pr_state.uno    ; 0               ; 0             ; 0            ; 0                ;
+; pr_state.dos    ; 0               ; 0             ; 1            ; 1                ;
+; pr_state.tres   ; 0               ; 1             ; 0            ; 1                ;
+; pr_state.cuatro ; 1               ; 0             ; 0            ; 1                ;
++-----------------+-----------------+---------------+--------------+------------------+
+
+
++----------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                ;
++-----------------------------------------------------+---------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal ; Free of Timing Hazards ;
++-----------------------------------------------------+---------------------+------------------------+
+; controlDibujo:controlDibujoBLK|pixel[0]             ; video_on            ; yes                    ;
+; controlDibujo:controlDibujoBLK|pixel[1]             ; video_on            ; yes                    ;
+; controlDibujo:controlDibujoBLK|pixel[2]             ; video_on            ; yes                    ;
+; controlDibujo:controlDibujoBLK|pixel[3]             ; video_on            ; yes                    ;
+; controlDibujo:controlDibujoBLK|pixel[4]             ; video_on            ; yes                    ;
+; controlDibujo:controlDibujoBLK|pixel[5]             ; video_on            ; yes                    ;
+; controlDibujo:controlDibujoBLK|pixel[6]             ; video_on            ; yes                    ;
+; controlDibujo:controlDibujoBLK|pixel[7]             ; video_on            ; yes                    ;
+; controlDibujo:controlDibujoBLK|pixel[8]             ; video_on            ; yes                    ;
+; controlDibujo:controlDibujoBLK|pixel[9]             ; video_on            ; yes                    ;
+; controlDibujo:controlDibujoBLK|pixel[10]            ; video_on            ; yes                    ;
+; controlDibujo:controlDibujoBLK|pixel[11]            ; video_on            ; yes                    ;
+; controlDibujo:controlDibujoBLK|nx_state             ; video_on            ; yes                    ;
+; controlDibujo:controlDibujoBLK|synch                ; video_on            ; yes                    ;
+; controlDibujo:controlDibujoBLK|numeropar            ; video_on            ; yes                    ;
+; Number of user-specified and inferred latches = 15  ;                     ;                        ;
++-----------------------------------------------------+---------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 92    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 92    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 10    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------+
+; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |mandelbrot|controlDibujo:controlDibujoBLK|conth:COLUMNAS|temp[9] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |mandelbrot ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; Con5           ; 33    ; Signed Integer                                    ;
+; N5             ; 6     ; Signed Integer                                    ;
+; Con6           ; 480   ; Signed Integer                                    ;
+; N6             ; 9     ; Signed Integer                                    ;
+; Con7           ; 10    ; Signed Integer                                    ;
+; N7             ; 4     ; Signed Integer                                    ;
+; Con8           ; 2     ; Signed Integer                                    ;
+; N8             ; 2     ; Signed Integer                                    ;
+; Con1           ; 96    ; Signed Integer                                    ;
+; N1             ; 7     ; Signed Integer                                    ;
+; Con2           ; 1280  ; Signed Integer                                    ;
+; N2             ; 11    ; Signed Integer                                    ;
+; Con3           ; 32    ; Signed Integer                                    ;
+; N3             ; 6     ; Signed Integer                                    ;
+; Con4           ; 192   ; Signed Integer                                    ;
+; N4             ; 8     ; Signed Integer                                    ;
+; Conh           ; 1600  ; Signed Integer                                    ;
+; Nh             ; 11    ; Signed Integer                                    ;
+; Conv           ; 1048  ; Signed Integer                                    ;
+; Nv             ; 11    ; Signed Integer                                    ;
++----------------+-------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: controlDibujo:controlDibujoBLK ;
++----------------+-------+----------------------------------------------------+
+; Parameter Name ; Value ; Type                                               ;
++----------------+-------+----------------------------------------------------+
+; nv             ; 11    ; Signed Integer                                     ;
+; nh             ; 11    ; Signed Integer                                     ;
+; conp           ; 480   ; Signed Integer                                     ;
++----------------+-------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: controlDibujo:controlDibujoBLK|Matriz:Matriz ;
++----------------+-------+------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                             ;
++----------------+-------+------------------------------------------------------------------+
+; nv             ; 11    ; Signed Integer                                                   ;
++----------------+-------+------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: controlDibujo:controlDibujoBLK|conth:COLUMNAS ;
++----------------+-------+-------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                              ;
++----------------+-------+-------------------------------------------------------------------+
+; conh           ; 480   ; Signed Integer                                                    ;
+; nh             ; 11    ; Signed Integer                                                    ;
++----------------+-------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: horizontal:horizontalBLK ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; con1           ; 96    ; Signed Integer                               ;
+; n1             ; 7     ; Signed Integer                               ;
+; con2           ; 1280  ; Signed Integer                               ;
+; n2             ; 11    ; Signed Integer                               ;
+; con3           ; 32    ; Signed Integer                               ;
+; n3             ; 6     ; Signed Integer                               ;
+; con4           ; 192   ; Signed Integer                               ;
+; n4             ; 8     ; Signed Integer                               ;
+; conh           ; 1600  ; Signed Integer                               ;
+; nh             ; 11    ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: horizontal:horizontalBLK|cont:BIST ;
++----------------+-------+--------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                   ;
++----------------+-------+--------------------------------------------------------+
+; con            ; 96    ; Signed Integer                                         ;
+; n              ; 7     ; Signed Integer                                         ;
++----------------+-------+--------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: horizontal:horizontalBLK|cont:BIST2 ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; con            ; 1280  ; Signed Integer                                          ;
+; n              ; 11    ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: horizontal:horizontalBLK|cont:BIST3 ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; con            ; 32    ; Signed Integer                                          ;
+; n              ; 6     ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: horizontal:horizontalBLK|cont:BIST4 ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; con            ; 192   ; Signed Integer                                          ;
+; n              ; 8     ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: horizontal:horizontalBLK|conth:BISTH ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; conh           ; 1600  ; Signed Integer                                           ;
+; nh             ; 11    ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: vertical:verticalBLK ;
++----------------+-------+------------------------------------------+
+; Parameter Name ; Value ; Type                                     ;
++----------------+-------+------------------------------------------+
+; con5           ; 33    ; Signed Integer                           ;
+; n5             ; 6     ; Signed Integer                           ;
+; con6           ; 480   ; Signed Integer                           ;
+; n6             ; 9     ; Signed Integer                           ;
+; con7           ; 10    ; Signed Integer                           ;
+; n7             ; 4     ; Signed Integer                           ;
+; con8           ; 2     ; Signed Integer                           ;
+; n8             ; 2     ; Signed Integer                           ;
+; conv           ; 1048  ; Signed Integer                           ;
+; nv             ; 11    ; Signed Integer                           ;
++----------------+-------+------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: vertical:verticalBLK|cont:BIST ;
++----------------+-------+----------------------------------------------------+
+; Parameter Name ; Value ; Type                                               ;
++----------------+-------+----------------------------------------------------+
+; con            ; 33    ; Signed Integer                                     ;
+; n              ; 6     ; Signed Integer                                     ;
++----------------+-------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: vertical:verticalBLK|cont:BIST2 ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; con            ; 480   ; Signed Integer                                      ;
+; n              ; 9     ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: vertical:verticalBLK|cont:BIST3 ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; con            ; 10    ; Signed Integer                                      ;
+; n              ; 4     ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: vertical:verticalBLK|cont:BIST4 ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; con            ; 2     ; Signed Integer                                      ;
+; n              ; 2     ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: vertical:verticalBLK|contv:BISTV ;
++----------------+-------+------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                 ;
++----------------+-------+------------------------------------------------------+
+; conv           ; 1048  ; Signed Integer                                       ;
+; nv             ; 11    ; Signed Integer                                       ;
++----------------+-------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "vertical:verticalBLK|contv:BISTV"                                                           ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port         ; Type   ; Severity ; Details                                                                             ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+; ena_contv    ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; contvmaxtick ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "vertical:verticalBLK"                                                                       ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port         ; Type   ; Severity ; Details                                                                             ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+; maxtickframe ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "horizontal:horizontalBLK|conth:BISTH"                                                       ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port         ; Type   ; Severity ; Details                                                                             ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+; ena_conth    ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; conthmaxtick ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "horizontal:horizontalBLK"                                                           ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; mtx  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "controlDibujo:controlDibujoBLK|conth:COLUMNAS"                                              ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port         ; Type   ; Severity ; Details                                                                             ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+; conthmaxtick ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------+
+; Port Connectivity Checks: "controlDibujo:controlDibujoBLK|Matriz:Matriz" ;
++-------------------------+-------+----------+-----------------------------+
+; Port                    ; Type  ; Severity ; Details                     ;
++-------------------------+-------+----------+-----------------------------+
+; posicionfila[31..11]    ; Input ; Info     ; Stuck at GND                ;
+; posicioncolumna[31..11] ; Input ; Info     ; Stuck at GND                ;
++-------------------------+-------+----------+-----------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "controlDibujo:controlDibujoBLK"                                                          ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; variablex ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; conteos   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.0.0 Build 156 04/24/2013 SJ Full Version
+    Info: Processing started: Thu May 30 01:56:06 2019
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off mandelbrot -c mandelbrot
+Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
+Info (12021): Found 2 design units, including 1 entities, in source file vertical.vhd
+    Info (12022): Found design unit 1: vertical-ARCH
+    Info (12023): Found entity 1: vertical
+Info (12021): Found 2 design units, including 1 entities, in source file operacion.vhd
+    Info (12022): Found design unit 1: Operacion-Op
+    Info (12023): Found entity 1: Operacion
+Info (12021): Found 2 design units, including 0 entities, in source file my_package.vhd
+    Info (12022): Found design unit 1: my_package
+    Info (12022): Found design unit 2: my_package-body
+Info (12021): Found 2 design units, including 1 entities, in source file matriz.vhd
+    Info (12022): Found design unit 1: Matriz-calculador
+    Info (12023): Found entity 1: Matriz
+Info (12021): Found 2 design units, including 1 entities, in source file mandelbrot.vhd
+    Info (12022): Found design unit 1: mandelbrot-mandelbrotARCH
+    Info (12023): Found entity 1: mandelbrot
+Info (12021): Found 2 design units, including 1 entities, in source file horizontal.vhd
+    Info (12022): Found design unit 1: horizontal-ARCH
+    Info (12023): Found entity 1: horizontal
+Info (12021): Found 2 design units, including 1 entities, in source file escape.vhd
+    Info (12022): Found design unit 1: Escape-Op
+    Info (12023): Found entity 1: Escape
+Info (12021): Found 2 design units, including 1 entities, in source file contv.vhd
+    Info (12022): Found design unit 1: contv-contvArch
+    Info (12023): Found entity 1: contv
+Info (12021): Found 2 design units, including 1 entities, in source file controlvertical.vhd
+    Info (12022): Found design unit 1: controlvertical-oneHot
+    Info (12023): Found entity 1: controlvertical
+Info (12021): Found 2 design units, including 1 entities, in source file controlhorizontal.vhd
+    Info (12022): Found design unit 1: controlhorizontal-oneHot
+    Info (12023): Found entity 1: controlhorizontal
+Info (12021): Found 2 design units, including 1 entities, in source file controldibujo.vhd
+    Info (12022): Found design unit 1: controlDibujo-controlDibujoARCH
+    Info (12023): Found entity 1: controlDibujo
+Info (12021): Found 2 design units, including 1 entities, in source file controlbolita.vhd
+    Info (12022): Found design unit 1: ControlBolita-bola
+    Info (12023): Found entity 1: ControlBolita
+Info (12021): Found 2 design units, including 1 entities, in source file controlbarrar.vhd
+    Info (12022): Found design unit 1: ControlBarraR-bar
+    Info (12023): Found entity 1: ControlBarraR
+Info (12021): Found 2 design units, including 1 entities, in source file controlbarral.vhd
+    Info (12022): Found design unit 1: ControlBarraL-bar
+    Info (12023): Found entity 1: ControlBarraL
+Info (12021): Found 2 design units, including 1 entities, in source file conth.vhd
+    Info (12022): Found design unit 1: conth-conthArch
+    Info (12023): Found entity 1: conth
+Info (12021): Found 2 design units, including 1 entities, in source file cont.vhd
+    Info (12022): Found design unit 1: cont-contArch
+    Info (12023): Found entity 1: cont
+Info (12127): Elaborating entity "mandelbrot" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at mandelbrot.vhd(45): object "MaxTickFrame" assigned a value but never read
+Info (12128): Elaborating entity "controlDibujo" for hierarchy "controlDibujo:controlDibujoBLK"
+Warning (10541): VHDL Signal Declaration warning at controlDibujo.vhd(17): used implicit default value for signal "conteos" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10036): Verilog HDL or VHDL warning at controlDibujo.vhd(34): object "MaxTickh" assigned a value but never read
+Warning (10492): VHDL Process Statement warning at controlDibujo.vhd(86): signal "video_on" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at controlDibujo.vhd(88): signal "LimCuadradoL" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at controlDibujo.vhd(88): signal "LimCuadradoR" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at controlDibujo.vhd(91): signal "LimCuadradoL" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at controlDibujo.vhd(91): signal "LimCuadradoR" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at controlDibujo.vhd(100): signal "LimCuadradoL" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at controlDibujo.vhd(100): signal "LimCuadradoR" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at controlDibujo.vhd(102): signal "LimCuadradoL" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at controlDibujo.vhd(102): signal "LimCuadradoR" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at controlDibujo.vhd(109): signal "LimCuadradoL" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at controlDibujo.vhd(109): signal "LimCuadradoR" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at controlDibujo.vhd(111): signal "LimCuadradoL" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at controlDibujo.vhd(111): signal "LimCuadradoR" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10631): VHDL Process Statement warning at controlDibujo.vhd(78): inferring latch(es) for signal or variable "numeropar", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at controlDibujo.vhd(78): inferring latch(es) for signal or variable "synch", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at controlDibujo.vhd(78): inferring latch(es) for signal or variable "pixel", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at controlDibujo.vhd(78): inferring latch(es) for signal or variable "nx_state", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "nx_state" at controlDibujo.vhd(78)
+Info (10041): Inferred latch for "pixel[0]" at controlDibujo.vhd(78)
+Info (10041): Inferred latch for "pixel[1]" at controlDibujo.vhd(78)
+Info (10041): Inferred latch for "pixel[2]" at controlDibujo.vhd(78)
+Info (10041): Inferred latch for "pixel[3]" at controlDibujo.vhd(78)
+Info (10041): Inferred latch for "pixel[4]" at controlDibujo.vhd(78)
+Info (10041): Inferred latch for "pixel[5]" at controlDibujo.vhd(78)
+Info (10041): Inferred latch for "pixel[6]" at controlDibujo.vhd(78)
+Info (10041): Inferred latch for "pixel[7]" at controlDibujo.vhd(78)
+Info (10041): Inferred latch for "pixel[8]" at controlDibujo.vhd(78)
+Info (10041): Inferred latch for "pixel[9]" at controlDibujo.vhd(78)
+Info (10041): Inferred latch for "pixel[10]" at controlDibujo.vhd(78)
+Info (10041): Inferred latch for "pixel[11]" at controlDibujo.vhd(78)
+Info (10041): Inferred latch for "synch" at controlDibujo.vhd(78)
+Info (10041): Inferred latch for "numeropar" at controlDibujo.vhd(78)
+Info (12128): Elaborating entity "Matriz" for hierarchy "controlDibujo:controlDibujoBLK|Matriz:Matriz"
+Info (12128): Elaborating entity "conth" for hierarchy "controlDibujo:controlDibujoBLK|conth:COLUMNAS"
+Info (12128): Elaborating entity "horizontal" for hierarchy "horizontal:horizontalBLK"
+Warning (10036): Verilog HDL or VHDL warning at horizontal.vhd(31): object "MaxTickh" assigned a value but never read
+Info (12128): Elaborating entity "controlhorizontal" for hierarchy "horizontal:horizontalBLK|controlhorizontal:DUT"
+Warning (10631): VHDL Process Statement warning at controlhorizontal.vhd(38): inferring latch(es) for signal or variable "nx_state", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "nx_state.cuatro" at controlhorizontal.vhd(38)
+Info (10041): Inferred latch for "nx_state.tres" at controlhorizontal.vhd(38)
+Info (10041): Inferred latch for "nx_state.dos" at controlhorizontal.vhd(38)
+Info (10041): Inferred latch for "nx_state.uno" at controlhorizontal.vhd(38)
+Info (12128): Elaborating entity "cont" for hierarchy "horizontal:horizontalBLK|cont:BIST"
+Info (12128): Elaborating entity "cont" for hierarchy "horizontal:horizontalBLK|cont:BIST2"
+Info (12128): Elaborating entity "cont" for hierarchy "horizontal:horizontalBLK|cont:BIST3"
+Info (12128): Elaborating entity "cont" for hierarchy "horizontal:horizontalBLK|cont:BIST4"
+Info (12128): Elaborating entity "conth" for hierarchy "horizontal:horizontalBLK|conth:BISTH"
+Info (12128): Elaborating entity "vertical" for hierarchy "vertical:verticalBLK"
+Warning (10036): Verilog HDL or VHDL warning at vertical.vhd(29): object "MaxTickv" assigned a value but never read
+Info (12128): Elaborating entity "controlvertical" for hierarchy "vertical:verticalBLK|controlvertical:DUT"
+Warning (10631): VHDL Process Statement warning at controlvertical.vhd(38): inferring latch(es) for signal or variable "nx_state", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "nx_state.cuatro" at controlvertical.vhd(38)
+Info (10041): Inferred latch for "nx_state.tres" at controlvertical.vhd(38)
+Info (10041): Inferred latch for "nx_state.dos" at controlvertical.vhd(38)
+Info (10041): Inferred latch for "nx_state.uno" at controlvertical.vhd(38)
+Info (12128): Elaborating entity "cont" for hierarchy "vertical:verticalBLK|cont:BIST"
+Info (12128): Elaborating entity "cont" for hierarchy "vertical:verticalBLK|cont:BIST2"
+Info (12128): Elaborating entity "cont" for hierarchy "vertical:verticalBLK|cont:BIST3"
+Info (12128): Elaborating entity "cont" for hierarchy "vertical:verticalBLK|cont:BIST4"
+Info (12128): Elaborating entity "contv" for hierarchy "vertical:verticalBLK|contv:BISTV"
+Info (13025): Duplicate LATCH primitives merged into single LATCH primitive
+    Info (13026): Duplicate LATCH primitive "controlDibujo:controlDibujoBLK|pixel[1]" merged with LATCH primitive "controlDibujo:controlDibujoBLK|pixel[0]"
+    Info (13026): Duplicate LATCH primitive "controlDibujo:controlDibujoBLK|pixel[2]" merged with LATCH primitive "controlDibujo:controlDibujoBLK|pixel[0]"
+    Info (13026): Duplicate LATCH primitive "controlDibujo:controlDibujoBLK|pixel[3]" merged with LATCH primitive "controlDibujo:controlDibujoBLK|pixel[0]"
+    Info (13026): Duplicate LATCH primitive "controlDibujo:controlDibujoBLK|pixel[4]" merged with LATCH primitive "controlDibujo:controlDibujoBLK|pixel[0]"
+    Info (13026): Duplicate LATCH primitive "controlDibujo:controlDibujoBLK|pixel[5]" merged with LATCH primitive "controlDibujo:controlDibujoBLK|pixel[0]"
+    Info (13026): Duplicate LATCH primitive "controlDibujo:controlDibujoBLK|pixel[6]" merged with LATCH primitive "controlDibujo:controlDibujoBLK|pixel[0]"
+    Info (13026): Duplicate LATCH primitive "controlDibujo:controlDibujoBLK|pixel[7]" merged with LATCH primitive "controlDibujo:controlDibujoBLK|pixel[0]"
+    Info (13026): Duplicate LATCH primitive "controlDibujo:controlDibujoBLK|pixel[8]" merged with LATCH primitive "controlDibujo:controlDibujoBLK|pixel[0]"
+    Info (13026): Duplicate LATCH primitive "controlDibujo:controlDibujoBLK|pixel[9]" merged with LATCH primitive "controlDibujo:controlDibujoBLK|pixel[0]"
+    Info (13026): Duplicate LATCH primitive "controlDibujo:controlDibujoBLK|pixel[10]" merged with LATCH primitive "controlDibujo:controlDibujoBLK|pixel[0]"
+    Info (13026): Duplicate LATCH primitive "controlDibujo:controlDibujoBLK|pixel[11]" merged with LATCH primitive "controlDibujo:controlDibujoBLK|pixel[0]"
+Critical Warning (18061): Ignored Power-Up Level option on the following registers
+    Critical Warning (18010): Register horizontal:horizontalBLK|cont:BIST2|temp[0] will power up to Low
+    Critical Warning (18010): Register horizontal:horizontalBLK|cont:BIST2|temp[11] will power up to Low
+    Critical Warning (18010): Register horizontal:horizontalBLK|cont:BIST2|temp[10] will power up to Low
+    Critical Warning (18010): Register horizontal:horizontalBLK|cont:BIST2|temp[9] will power up to Low
+    Critical Warning (18010): Register horizontal:horizontalBLK|cont:BIST2|temp[8] will power up to Low
+    Critical Warning (18010): Register horizontal:horizontalBLK|cont:BIST2|temp[7] will power up to Low
+    Critical Warning (18010): Register horizontal:horizontalBLK|cont:BIST2|temp[6] will power up to Low
+    Critical Warning (18010): Register horizontal:horizontalBLK|cont:BIST2|temp[5] will power up to Low
+    Critical Warning (18010): Register horizontal:horizontalBLK|cont:BIST2|temp[4] will power up to Low
+    Critical Warning (18010): Register horizontal:horizontalBLK|cont:BIST2|temp[3] will power up to Low
+    Critical Warning (18010): Register horizontal:horizontalBLK|cont:BIST2|temp[2] will power up to Low
+    Critical Warning (18010): Register horizontal:horizontalBLK|cont:BIST2|temp[1] will power up to Low
+    Critical Warning (18010): Register horizontal:horizontalBLK|cont:BIST|temp[0] will power up to Low
+    Critical Warning (18010): Register horizontal:horizontalBLK|cont:BIST|temp[7] will power up to Low
+    Critical Warning (18010): Register horizontal:horizontalBLK|cont:BIST|temp[6] will power up to Low
+    Critical Warning (18010): Register horizontal:horizontalBLK|cont:BIST|temp[5] will power up to Low
+    Critical Warning (18010): Register horizontal:horizontalBLK|cont:BIST|temp[4] will power up to Low
+    Critical Warning (18010): Register horizontal:horizontalBLK|cont:BIST|temp[3] will power up to Low
+    Critical Warning (18010): Register horizontal:horizontalBLK|cont:BIST|temp[2] will power up to Low
+    Critical Warning (18010): Register horizontal:horizontalBLK|cont:BIST|temp[1] will power up to Low
+    Critical Warning (18010): Register vertical:verticalBLK|cont:BIST2|temp[9] will power up to Low
+    Critical Warning (18010): Register vertical:verticalBLK|cont:BIST2|temp[8] will power up to Low
+    Critical Warning (18010): Register vertical:verticalBLK|cont:BIST2|temp[7] will power up to Low
+    Critical Warning (18010): Register vertical:verticalBLK|cont:BIST2|temp[6] will power up to Low
+    Critical Warning (18010): Register vertical:verticalBLK|cont:BIST2|temp[5] will power up to Low
+    Critical Warning (18010): Register vertical:verticalBLK|cont:BIST2|temp[4] will power up to Low
+    Critical Warning (18010): Register vertical:verticalBLK|cont:BIST2|temp[3] will power up to Low
+    Critical Warning (18010): Register vertical:verticalBLK|cont:BIST2|temp[2] will power up to Low
+    Critical Warning (18010): Register vertical:verticalBLK|cont:BIST2|temp[1] will power up to Low
+    Critical Warning (18010): Register vertical:verticalBLK|cont:BIST2|temp[0] will power up to Low
+    Critical Warning (18010): Register vertical:verticalBLK|cont:BIST|temp[0] will power up to Low
+    Critical Warning (18010): Register vertical:verticalBLK|cont:BIST|temp[6] will power up to Low
+    Critical Warning (18010): Register vertical:verticalBLK|cont:BIST|temp[5] will power up to Low
+    Critical Warning (18010): Register vertical:verticalBLK|cont:BIST|temp[4] will power up to Low
+    Critical Warning (18010): Register vertical:verticalBLK|cont:BIST|temp[3] will power up to Low
+    Critical Warning (18010): Register vertical:verticalBLK|cont:BIST|temp[2] will power up to Low
+    Critical Warning (18010): Register vertical:verticalBLK|cont:BIST|temp[1] will power up to Low
+    Critical Warning (18010): Register horizontal:horizontalBLK|cont:BIST4|temp[0] will power up to Low
+    Critical Warning (18010): Register horizontal:horizontalBLK|cont:BIST4|temp[8] will power up to Low
+    Critical Warning (18010): Register horizontal:horizontalBLK|cont:BIST4|temp[7] will power up to Low
+    Critical Warning (18010): Register horizontal:horizontalBLK|cont:BIST4|temp[6] will power up to Low
+    Critical Warning (18010): Register horizontal:horizontalBLK|cont:BIST4|temp[5] will power up to Low
+    Critical Warning (18010): Register horizontal:horizontalBLK|cont:BIST4|temp[4] will power up to Low
+    Critical Warning (18010): Register horizontal:horizontalBLK|cont:BIST4|temp[3] will power up to Low
+    Critical Warning (18010): Register horizontal:horizontalBLK|cont:BIST4|temp[2] will power up to Low
+    Critical Warning (18010): Register horizontal:horizontalBLK|cont:BIST4|temp[1] will power up to Low
+    Critical Warning (18010): Register vertical:verticalBLK|cont:BIST3|temp[0] will power up to Low
+    Critical Warning (18010): Register vertical:verticalBLK|cont:BIST3|temp[4] will power up to Low
+    Critical Warning (18010): Register vertical:verticalBLK|cont:BIST3|temp[3] will power up to Low
+    Critical Warning (18010): Register vertical:verticalBLK|cont:BIST3|temp[2] will power up to Low
+    Critical Warning (18010): Register vertical:verticalBLK|cont:BIST3|temp[1] will power up to Low
+    Critical Warning (18010): Register vertical:verticalBLK|cont:BIST4|temp[0] will power up to Low
+    Critical Warning (18010): Register vertical:verticalBLK|cont:BIST4|temp[2] will power up to Low
+    Critical Warning (18010): Register vertical:verticalBLK|cont:BIST4|temp[1] will power up to Low
+    Critical Warning (18010): Register horizontal:horizontalBLK|cont:BIST3|temp[0] will power up to Low
+    Critical Warning (18010): Register horizontal:horizontalBLK|cont:BIST3|temp[6] will power up to Low
+    Critical Warning (18010): Register horizontal:horizontalBLK|cont:BIST3|temp[5] will power up to Low
+    Critical Warning (18010): Register horizontal:horizontalBLK|cont:BIST3|temp[4] will power up to Low
+    Critical Warning (18010): Register horizontal:horizontalBLK|cont:BIST3|temp[3] will power up to Low
+    Critical Warning (18010): Register horizontal:horizontalBLK|cont:BIST3|temp[2] will power up to Low
+    Critical Warning (18010): Register horizontal:horizontalBLK|cont:BIST3|temp[1] will power up to Low
+    Critical Warning (18010): Register controlDibujo:controlDibujoBLK|conth:COLUMNAS|temp[8] will power up to Low
+    Critical Warning (18010): Register controlDibujo:controlDibujoBLK|conth:COLUMNAS|temp[4] will power up to Low
+    Critical Warning (18010): Register horizontal:horizontalBLK|conth:BISTH|temp[10] will power up to Low
+    Critical Warning (18010): Register horizontal:horizontalBLK|conth:BISTH|temp[9] will power up to Low
+    Critical Warning (18010): Register horizontal:horizontalBLK|conth:BISTH|temp[8] will power up to Low
+    Critical Warning (18010): Register horizontal:horizontalBLK|conth:BISTH|temp[7] will power up to Low
+    Critical Warning (18010): Register horizontal:horizontalBLK|conth:BISTH|temp[6] will power up to Low
+    Critical Warning (18010): Register horizontal:horizontalBLK|conth:BISTH|temp[5] will power up to Low
+    Critical Warning (18010): Register horizontal:horizontalBLK|conth:BISTH|temp[4] will power up to Low
+    Critical Warning (18010): Register horizontal:horizontalBLK|conth:BISTH|temp[3] will power up to Low
+    Critical Warning (18010): Register horizontal:horizontalBLK|conth:BISTH|temp[2] will power up to Low
+    Critical Warning (18010): Register horizontal:horizontalBLK|conth:BISTH|temp[1] will power up to Low
+    Critical Warning (18010): Register horizontal:horizontalBLK|conth:BISTH|temp[0] will power up to Low
+    Critical Warning (18010): Register controlDibujo:controlDibujoBLK|conth:COLUMNAS|temp[9] will power up to Low
+    Critical Warning (18010): Register controlDibujo:controlDibujoBLK|conth:COLUMNAS|temp[7] will power up to Low
+    Critical Warning (18010): Register controlDibujo:controlDibujoBLK|conth:COLUMNAS|temp[6] will power up to Low
+    Critical Warning (18010): Register controlDibujo:controlDibujoBLK|conth:COLUMNAS|temp[5] will power up to Low
+    Critical Warning (18010): Register controlDibujo:controlDibujoBLK|conth:COLUMNAS|temp[3] will power up to Low
+    Critical Warning (18010): Register controlDibujo:controlDibujoBLK|conth:COLUMNAS|temp[2] will power up to Low
+    Critical Warning (18010): Register controlDibujo:controlDibujoBLK|conth:COLUMNAS|temp[1] will power up to Low
+    Critical Warning (18010): Register controlDibujo:controlDibujoBLK|conth:COLUMNAS|temp[0] will power up to Low
+    Critical Warning (18010): Register horizontal:horizontalBLK|conth:BISTH|temp[11] will power up to Low
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 4 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "zoom[0]"
+    Warning (15610): No output dependent on input pin "zoom[1]"
+    Warning (15610): No output dependent on input pin "zoom[2]"
+    Warning (15610): No output dependent on input pin "zoom[3]"
+Info (21057): Implemented 237 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 6 input pins
+    Info (21059): Implemented 17 output pins
+    Info (21061): Implemented 214 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 113 warnings
+    Info: Peak virtual memory: 4667 megabytes
+    Info: Processing ended: Thu May 30 01:56:08 2019
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:03
+
+
